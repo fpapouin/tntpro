@@ -1,5 +1,8 @@
 */.vs/
+*.suo
 /maggy/maggyForm/bin/
 /maggy/maggyForm/obj/
 /oneTap/oneTapForm/bin/
 /oneTap/oneTapForm/obj/
+/AutoFillMCM/AutoFillMCM/bin/
+/AutoFillMCM/AutoFillMCM/obj/
