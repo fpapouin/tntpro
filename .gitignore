@@ -26,3 +26,6 @@
 /snapshotForm/snapshotForm/obj/
 /XmlDataKeeper/DataKeeperConsoleTest/bin/
 /XmlDataKeeper/DataKeeperConsoleTest/obj/
+/tnt/tnt/bin/
+/tnt/tnt/obj/
+*.csproj.user
