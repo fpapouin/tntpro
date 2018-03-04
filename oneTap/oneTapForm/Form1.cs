@@ -182,17 +182,20 @@ namespace oneTapForm
         private bool IsCross(Bitmap img, int squarePixelSize)
         {
             if (img == null) return false;
-            for (int x = 0; x < squarePixelSize; x++)
+
+            Color center = img.GetPixel(squarePixelSize / 2, squarePixelSize / 2);
+
+            for (int x = 1; x < squarePixelSize / 2; x = x + 2)
             {
                 //Check vertical
-                if (img.GetPixel(x, squarePixelSize / 2).R != 0) return false;
-                if (img.GetPixel(x, squarePixelSize / 2).G != 0) return false;
-                if (img.GetPixel(x, squarePixelSize / 2).B != 0) return false;
+                if (img.GetPixel(x, squarePixelSize / 2).R != center.R) return false;
+                if (img.GetPixel(x, squarePixelSize / 2).G != center.G) return false;
+                if (img.GetPixel(x, squarePixelSize / 2).B != center.B) return false;
 
                 //Check horizontal
-                if (img.GetPixel(squarePixelSize / 2, x).R != 0) return false;
-                if (img.GetPixel(squarePixelSize / 2, x).G != 0) return false;
-                if (img.GetPixel(squarePixelSize / 2, x).B != 0) return false;
+                if (img.GetPixel(squarePixelSize / 2, x).R != center.R) return false;
+                if (img.GetPixel(squarePixelSize / 2, x).G != center.G) return false;
+                if (img.GetPixel(squarePixelSize / 2, x).B != center.B) return false;
             }
             return true;
         }
