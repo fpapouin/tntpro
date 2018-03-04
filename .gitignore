@@ -1,5 +1,6 @@
 */.vs/
 *.suo
+*.csproj.user
 /maggy/maggyForm/bin/
 /maggy/maggyForm/obj/
 /oneTap/oneTapForm/bin/
@@ -28,4 +29,5 @@
 /XmlDataKeeper/DataKeeperConsoleTest/obj/
 /tnt/tnt/bin/
 /tnt/tnt/obj/
-*.csproj.user
+/tntpro/tntpro/bin/
+/tntpro/tntpro/obj/

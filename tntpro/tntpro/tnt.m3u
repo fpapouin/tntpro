@@ -1,0 +1,186 @@
+#EXTINF:0, France 4
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=474166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=260
+dvb-t://
+#EXTINF:0, France O
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=474166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=261
+dvb-t://
+#EXTINF:0, France 3
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=474166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=274
+dvb-t://
+#EXTINF:0, TVR
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=474166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=373
+dvb-t://
+#EXTINF:0, France 2
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=474166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=257
+dvb-t://
+#EXTINF:0, TMC
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=498166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=1542
+dvb-t://
+#EXTINF:0, NT1
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=498166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=1544
+dvb-t://
+#EXTINF:0, LCP
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=498166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=1545
+dvb-t://
+#EXTINF:0, NRJ12
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=498166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=1538
+dvb-t://
+#EXTINF:0, TF1
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=498166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=1537
+dvb-t://
+#EXTINF:0, C+ sport
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=522166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=771
+dvb-t://
+#EXTINF:0, LCI
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=522166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=776
+dvb-t://
+#EXTINF:0, C+ cinema
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=522166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=770
+dvb-t://
+#EXTINF:0, PARIS PREMIERE
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=522166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=777
+dvb-t://
+#EXTINF:0, Planete
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=522166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=772
+dvb-t://
+#EXTINF:0, Canal+
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=522166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=769
+dvb-t://
+#EXTINF:0, D8
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=626166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=513
+dvb-t://
+#EXTINF:0, BFM TV
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=626166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=515
+dvb-t://
+#EXTINF:0, Gulli
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=626166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=518
+dvb-t://
+#EXTINF:0, D17
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=626166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=517
+dvb-t://
+#EXTINF:0, iTele
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=626166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=516
+dvb-t://
+#EXTINF:0, RMC Decouverte
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=674166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=2564
+dvb-t://
+#EXTINF:0, HD1
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=674166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=2561
+dvb-t://
+#EXTINF:0, LEquipe 21
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=674166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=2562
+dvb-t://
+#EXTINF:0, Cherie 25
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=674166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=2563
+dvb-t://
+#EXTINF:0, NUMERO 23
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=674166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=2565
+dvb-t://
+#EXTINF:0, 6ter
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=698166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=1046
+dvb-t://
+#EXTINF:0, France 5
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=698166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=1045
+dvb-t://
+#EXTINF:0, W9
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=698166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=1026
+dvb-t://
+#EXTINF:0, M6
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=698166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=1025
+dvb-t://
+#EXTINF:0, Arte
+#EXTVLCOPT:dvb-adapter=0
+#EXTVLCOPT:dvb-frequency=698166000
+#EXTVLCOPT:dvb-bandwidth=8
+#EXTVLCOPT:program=1031
+dvb-t://
