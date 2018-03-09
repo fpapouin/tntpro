@@ -28,14 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.ReplaceConfig = new System.Windows.Forms.CheckBox();
             this.UseConsole = new System.Windows.Forms.CheckBox();
             this.InstallDummyPlugin = new System.Windows.Forms.CheckBox();
             this.Launch = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.sdsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uninstallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.deuxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uninstallToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -84,12 +92,56 @@
             // 
             // listBox1
             // 
+            this.listBox1.ContextMenuStrip = this.contextMenuStrip1;
             this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(0, 0);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(410, 273);
+            this.listBox1.Size = new System.Drawing.Size(410, 76);
             this.listBox1.TabIndex = 4;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseDown);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sdsToolStripMenuItem,
+            this.deuxToolStripMenuItem,
+            this.refreshToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 92);
+            // 
+            // sdsToolStripMenuItem
+            // 
+            this.sdsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.uninstallToolStripMenuItem});
+            this.sdsToolStripMenuItem.Name = "sdsToolStripMenuItem";
+            this.sdsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sdsToolStripMenuItem.Text = "ScePro";
+            this.sdsToolStripMenuItem.Visible = false;
+            // 
+            // uninstallToolStripMenuItem
+            // 
+            this.uninstallToolStripMenuItem.Name = "uninstallToolStripMenuItem";
+            this.uninstallToolStripMenuItem.Size = new System.Drawing.Size(120, 22);
+            this.uninstallToolStripMenuItem.Text = "Uninstall";
+            this.uninstallToolStripMenuItem.Click += new System.EventHandler(this.uninstallToolStripMenuItem_Click);
+            // 
+            // deuxToolStripMenuItem
+            // 
+            this.deuxToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.uninstallToolStripMenuItem1});
+            this.deuxToolStripMenuItem.Name = "deuxToolStripMenuItem";
+            this.deuxToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.deuxToolStripMenuItem.Text = "Plugin";
+            this.deuxToolStripMenuItem.Visible = false;
+            // 
+            // uninstallToolStripMenuItem1
+            // 
+            this.uninstallToolStripMenuItem1.Name = "uninstallToolStripMenuItem1";
+            this.uninstallToolStripMenuItem1.Size = new System.Drawing.Size(120, 22);
+            this.uninstallToolStripMenuItem1.Text = "Uninstall";
+            this.uninstallToolStripMenuItem1.Click += new System.EventHandler(this.uninstallToolStripMenuItem1_Click);
             // 
             // panel1
             // 
@@ -118,20 +170,28 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 36);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(410, 273);
+            this.panel2.Size = new System.Drawing.Size(410, 76);
             this.panel2.TabIndex = 6;
+            // 
+            // refreshToolStripMenuItem
+            // 
+            this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.refreshToolStripMenuItem.Text = "Refresh";
+            this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(410, 309);
+            this.ClientSize = new System.Drawing.Size(410, 112);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
             this.Text = "SceSelector";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.contextMenuStrip1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.PerformLayout();
@@ -150,6 +210,12 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem sdsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deuxToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem uninstallToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem uninstallToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
     }
 }
 
