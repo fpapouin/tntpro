@@ -14,6 +14,7 @@ namespace Aging
 {
     class Program
     {
+        static string procName = "smartCityExplorer";
         static void Main(string[] args)
         {
             int minutes = 1;
