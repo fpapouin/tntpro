@@ -21,7 +21,7 @@ namespace oneTap2
         private void Form1_Shown(object sender, EventArgs e)
         {
             this.Visible = false;
-            System.Timers.Timer timer = new System.Timers.Timer(100);
+            System.Timers.Timer timer = new System.Timers.Timer(10);
             timer.Elapsed += OnTimedEvent;
             timer.Start();
         }

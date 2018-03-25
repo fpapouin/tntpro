@@ -24,16 +24,15 @@ namespace oneTap2
         {
             public static int squarePixelSize = 10;
 
-            public static bool isMouse3Down = false;
             public static Bitmap refBitMap;
             public static Bitmap lastBitMap;
         }
 
         private void DoLoop()
         {
-            StateMachine.isMouse3Down = (GetKeyState(0x04) & 0x80) == 128;
+            bool isMouse3Down = (GetKeyState(0x04) & 0x80) == 128;
 
-            if (StateMachine.isMouse3Down)
+            if (isMouse3Down)
             {
                 //is ref OK?
                 if (IsCross(StateMachine.refBitMap, StateMachine.squarePixelSize))
