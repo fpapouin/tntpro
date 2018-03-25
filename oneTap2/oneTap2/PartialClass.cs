@@ -20,9 +20,22 @@ namespace oneTap2
         [DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
         public static extern short GetKeyState(int virtualKey);
 
+        [DllImport("user32.dll")]
+        static extern bool GetCursorPos(ref Point lpPoint);
+
+        [DllImport("User32.dll")]
+        private static extern bool GetLastInputInfo(ref LASTINPUTINFO plii);
+
+        private struct LASTINPUTINFO
+        {
+            public uint cbSize;
+            public uint dwTime;
+        }
+
         static class StateMachine
         {
             public static int squarePixelSize = 10;
+            public static uint lastdwTime = 0;
 
             public static Bitmap refBitMap;
             public static Bitmap lastBitMap;
@@ -30,9 +43,7 @@ namespace oneTap2
 
         private void DoLoop()
         {
-            bool isMouse3Down = (GetKeyState(0x04) & 0x80) == 128;
-
-            if (isMouse3Down)
+            if (IsMouse3Down() && IsMouseCentered() && !IsMouseMoving())
             {
                 //is ref OK?
                 if (IsCross(StateMachine.refBitMap, StateMachine.squarePixelSize))
@@ -72,6 +83,46 @@ namespace oneTap2
                 StateMachine.lastBitMap = null;
                 StateMachine.refBitMap = null;
             }
+        }
+
+        //True if mouse is moving
+        private bool IsMouseMoving()
+        {
+            bool result = false;
+            LASTINPUTINFO lii = new LASTINPUTINFO();
+            lii.cbSize = Convert.ToUInt32(System.Runtime.InteropServices.Marshal.SizeOf(typeof(LASTINPUTINFO)));
+            if (GetLastInputInfo(ref lii))
+            {
+                Debug.WriteLine(lii.dwTime - StateMachine.lastdwTime);
+                if (lii.dwTime != StateMachine.lastdwTime)
+                {
+                    result = true;
+                }
+
+                StateMachine.lastdwTime = lii.dwTime;
+            }
+
+            return result;
+        }
+
+        //True if mouse is centered
+        private bool IsMouseCentered()
+        {
+            Point pt = new Point();
+            GetCursorPos(ref pt);
+            if (pt.X == 1920 / 2 && pt.Y == 1080 / 2)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        //True if mouse3 is down
+        private bool IsMouse3Down()
+        {
+            //MSB of byte is true 0000 0000 1000 0000
+            //0x05 = virtual key of middle mouse buton
+            return (GetKeyState(0x04) & 0x80) == 128;
         }
 
         //Get a square img from the center of FULLHD screen.
