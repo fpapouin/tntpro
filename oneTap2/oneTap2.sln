@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2015
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "oneTap2", "oneTap2\oneTap2.csproj", "{BBCEC7A2-8CE1-4F22-B874-2F2185F6BBC7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBCEC7A2-8CE1-4F22-B874-2F2185F6BBC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBCEC7A2-8CE1-4F22-B874-2F2185F6BBC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBCEC7A2-8CE1-4F22-B874-2F2185F6BBC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBCEC7A2-8CE1-4F22-B874-2F2185F6BBC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC78AC8A-64D1-428E-9982-62AC585D11CC}
+	EndGlobalSection
+EndGlobal
