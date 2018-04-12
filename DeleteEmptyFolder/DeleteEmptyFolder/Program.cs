@@ -25,5 +25,21 @@ namespace DeleteEmptyFolder
                     ddi.Delete(true);
             }
         }
+        
+        private void CopyFilesRecursively(DirectoryInfo source, DirectoryInfo target)
+        {
+            foreach (DirectoryInfo dir in source.GetDirectories())
+            {
+                CopyFilesRecursively(dir, target.CreateSubdirectory(dir.Name));
+            }
+            foreach (FileInfo file in source.GetFiles())
+            {
+                // Ignore readonly files
+                if ((File.GetAttributes(file.FullName) & FileAttributes.ReadOnly) != FileAttributes.ReadOnly)
+                {
+                    file.CopyTo(Path.Combine(target.FullName, file.Name));
+                }
+            }
+        }
     }
 }
