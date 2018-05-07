@@ -11,57 +11,114 @@ namespace oneTap2
 {
     public partial class Form1
     {
-        private const int MOUSEEVENTF_LEFTDOWN = 0x0002; /* left button down */
-        private const int MOUSEEVENTF_LEFTUP = 0x0004; /* left button up */
+        public static Painter painter = new Painter();
+        public static Rectangle zone = new Rectangle(new Point(1920 / 2, 1080 / 2), new Size(512, 16));
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall, EntryPoint = "mouse_event")]
-        public static extern void Mouse_event(int dwFlags, int dx, int dy, int cButtons, int dwExtraInfo);
+        public static Bitmap previousImg;
+        public static Bitmap currentImg;
 
-        [DllImport("user32.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.StdCall)]
-        public static extern short GetKeyState(int virtualKey);
+        public static Stopwatch chrono = new Stopwatch();
+        static long elapsedMilliseconds = 0;
 
-        [DllImport("user32.dll")]
-        static extern bool GetCursorPos(ref Point lpPoint);
+        static bool hasEnemy = false;
+        static float left = 0.0f;
+        static float center = 0.0f;
+        static float right = 0.0f;
 
-        [DllImport("User32.dll")]
-        private static extern bool GetLastInputInfo(ref LASTINPUTINFO plii);
-
-        private struct LASTINPUTINFO
-        {
-            public uint cbSize;
-            public uint dwTime;
-        }
-
-        static class StateMachine
-        {
-            public static int squarePixelSize = 10;
-            public static uint lastdwTime = 0;
-
-            public static Bitmap refBitMap;
-            public static Bitmap lastBitMap;
-        }
+        //List<Square> Squares = new List<Square> { center, two, four, eight, ten };
 
         private void DoLoop()
         {
-            if (IsMouse3Down() && IsMouseCentered() && !IsMouseMoving())
+            chrono.Restart();
+
+            if (Mouse.IsMouse3Down() && Mouse.IsMouseCentered(new Point(1920 / 2, 1080 / 2)))
+            {
+                CalcMovement(zone);
+
+                //si les mouvements vers left ou vers right sont proche de zero alors on ne bouge pas et on peu analyser le centre.
+                hasEnemy = false;
+                if (left < 1 || right < 1)
+                    if (center > 2.0f) hasEnemy = true;
+
+
+                if (hasEnemy)
+                {
+                    if (IsCross(currentImg))
+                    Mouse.ClickMouse1();
+                }
+            }
+
+            elapsedMilliseconds = chrono.ElapsedMilliseconds;
+        }
+
+        public void CalcMovement(Rectangle rect)
+        {
+            previousImg = currentImg;
+            currentImg = BitmapTools.CaptureBitmap(rect);
+
+            Rectangle leftRect = new Rectangle(0, 0, 16, 16);
+            Rectangle rightRect = new Rectangle(rect.Width - 16, 0, 16, 16);
+            Rectangle centerRect = new Rectangle(rect.Width / 2 - 16 / 2, 0, 16, 16);
+
+            left = BitmapTools.GetBitmapDiff(previousImg, currentImg, leftRect);
+            right = BitmapTools.GetBitmapDiff(previousImg, currentImg, rightRect);
+            center = BitmapTools.GetBitmapDiff(previousImg, currentImg, centerRect);
+
+            //is Diff over trig?
+            //return (diffPurcentage > trig && diffPurcentage < 100);
+        }
+
+        private void DoDraw()
+        {
+            Rectangle outlineZone = zone;
+            outlineZone.Inflate(8, 8);
+            painter.DrawRect(outlineZone);
+            string message = string.Format("left={1} \t center={2} \t right={3} \t time={0}", elapsedMilliseconds, left, center, right);
+            Rectangle rect = new Rectangle(zone.Location, zone.Size);
+            rect.Offset(0, zone.Height * 2);
+            //rect.Inflate(128, 0);
+            painter.DrawString(message, rect);
+        }
+
+        private bool IsCross(Bitmap img)
+        {
+            if (img == null) return false;
+
+            Color center = img.GetPixel(img.Width / 2, img.Height / 2);
+            Color left = img.GetPixel(img.Width / 2 - 2, img.Height / 2);
+            Color right = img.GetPixel(img.Width / 2 + 2, img.Height / 2);
+
+            if (!center.Equals(left)) return false;
+            if (!center.Equals(right)) return false;
+
+            return true;
+        }
+
+
+        /*private void DoLoopNew()
+        {
+            if (IsMouse3Down() && IsMouseCentered(StateMachine.screenCenter) && !IsMouseMoving())
             {
                 //is ref OK?
                 if (IsCross(StateMachine.refBitMap, StateMachine.squarePixelSize))
                 {
                     //get last
-                    StateMachine.lastBitMap = GetBitmap(StateMachine.squarePixelSize);
+                    StateMachine.lastBitMap = CaptureBitmap(StateMachine.screenCenter, StateMachine.squarePixelSize);
                     //is last OK?
                     if (IsCross(StateMachine.lastBitMap, StateMachine.squarePixelSize))
                     {
                         //getdiff
                         float diff = GetBitmapDiff(StateMachine.refBitMap, StateMachine.lastBitMap, StateMachine.squarePixelSize);
 
-                        //is Diff between 2% and 50% ?
+                        //is Diff between 3% and 50% ?
                         if (diff > 3 && diff < 50)
                         {
                             //click
-                            Mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
-                            Mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
+                            if (chrono.ElapsedMilliseconds > 250)
+                            {
+                                ClickMouse1();
+                                chrono.Restart();
+                            }
                         }
                     }
                     else
@@ -74,7 +131,7 @@ namespace oneTap2
                 else
                 {
                     //take photo
-                    StateMachine.refBitMap = GetBitmap(StateMachine.squarePixelSize);
+                    StateMachine.refBitMap = CaptureBitmap(StateMachine.screenCenter, StateMachine.squarePixelSize);
                 }
             }
             else
@@ -83,98 +140,27 @@ namespace oneTap2
                 StateMachine.lastBitMap = null;
                 StateMachine.refBitMap = null;
             }
-        }
+        }*/
 
-        //True if mouse is moving
-        private bool IsMouseMoving()
-        {
-            bool result = false;
-            LASTINPUTINFO lii = new LASTINPUTINFO();
-            lii.cbSize = Convert.ToUInt32(System.Runtime.InteropServices.Marshal.SizeOf(typeof(LASTINPUTINFO)));
-            if (GetLastInputInfo(ref lii))
-            {
-                Debug.WriteLine(lii.dwTime - StateMachine.lastdwTime);
-                if (lii.dwTime != StateMachine.lastdwTime)
-                {
-                    result = true;
-                }
 
-                StateMachine.lastdwTime = lii.dwTime;
-            }
 
-            return result;
-        }
+        /*   //Check if there is a single color cross
+           private bool IsCross(Bitmap img, int squarePixelSize)
+           {
+               if (img == null) return false;
 
-        //True if mouse is centered
-        private bool IsMouseCentered()
-        {
-            Point pt = new Point();
-            GetCursorPos(ref pt);
-            if (pt.X == 1920 / 2 && pt.Y == 1080 / 2)
-            {
-                return true;
-            }
-            return false;
-        }
+               Color center = img.GetPixel(squarePixelSize / 2, squarePixelSize / 2);
+               Color left = img.GetPixel(squarePixelSize / 2 - 2, squarePixelSize / 2);
+               Color right = img.GetPixel(squarePixelSize / 2 + 2, squarePixelSize / 2);
 
-        //True if mouse3 is down
-        private bool IsMouse3Down()
-        {
-            //MSB of byte is true 0000 0000 1000 0000
-            //0x05 = virtual key of middle mouse buton
-            return (GetKeyState(0x04) & 0x80) == 128;
-        }
+               if (!center.Equals(left)) return false;
+               if (!center.Equals(right)) return false;
 
-        //Get a square img from the center of FULLHD screen.
-        private Bitmap GetBitmap(int squarePixelSize)
-        {
-            Bitmap bmpScreenCapture = new Bitmap(squarePixelSize, squarePixelSize);
-            Graphics graphic = Graphics.FromImage(bmpScreenCapture);
+               return true;
+           }
+           */
 
-            graphic.CopyFromScreen(1920 / 2 - squarePixelSize / 2, 1080 / 2 - squarePixelSize / 2, 0, 0, bmpScreenCapture.Size, CopyPixelOperation.SourceCopy);
 
-            return bmpScreenCapture;
-        }
 
-        //Get purcentage diff between to squared img
-        private float GetBitmapDiff(Bitmap img1, Bitmap img2, int squarePixelSize)
-        {
-            float diff = 0;
-            if (img1 != null && img2 != null)
-            {
-                for (int x = 0; x < squarePixelSize; x++)
-                {
-                    for (int y = 0; y < squarePixelSize; y++)
-                    {
-                        diff += (float)Math.Abs(img1.GetPixel(x, y).R - img2.GetPixel(x, y).R) / 255;
-                        diff += (float)Math.Abs(img1.GetPixel(x, y).G - img2.GetPixel(x, y).G) / 255;
-                        diff += (float)Math.Abs(img1.GetPixel(x, y).B - img2.GetPixel(x, y).B) / 255;
-                    }
-                }
-            }
-            return 100 * diff / (squarePixelSize * squarePixelSize * 3);
-        }
-
-        //Check if there is a single color cross
-        private bool IsCross(Bitmap img, int squarePixelSize)
-        {
-            if (img == null) return false;
-
-            Color center = img.GetPixel(squarePixelSize / 2, squarePixelSize / 2);
-
-            for (int x = 1; x < squarePixelSize / 2; x = x + 2)
-            {
-                //Check vertical
-                if (img.GetPixel(x, squarePixelSize / 2).R != center.R) return false;
-                if (img.GetPixel(x, squarePixelSize / 2).G != center.G) return false;
-                if (img.GetPixel(x, squarePixelSize / 2).B != center.B) return false;
-
-                //Check horizontal
-                if (img.GetPixel(squarePixelSize / 2, x).R != center.R) return false;
-                if (img.GetPixel(squarePixelSize / 2, x).G != center.G) return false;
-                if (img.GetPixel(squarePixelSize / 2, x).B != center.B) return false;
-            }
-            return true;
-        }
     }
 }

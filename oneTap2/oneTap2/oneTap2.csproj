@@ -48,12 +48,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BitmapTools.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mouse.cs" />
+    <Compile Include="Painter.cs" />
     <Compile Include="PartialClass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,4 +91,7 @@
     <Content Include="appicon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetDir)\$(TargetFileName) a:\oneTap</PostBuildEvent>
+  </PropertyGroup>
 </Project>
