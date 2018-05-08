@@ -23,29 +23,15 @@ namespace oneTap2
         {
             this.Visible = false;
 
-            //Shift zone to center
-            zone.Offset(-zone.Size.Width / 2, -zone.Size.Height / 2);
-
             System.Timers.Timer timer = new System.Timers.Timer(10);
             timer.Elapsed += OnTimedEvent;
             timer.Start();
-
-            System.Timers.Timer timer2 = new System.Timers.Timer(200);
-            timer2.Elapsed += OnTimedEvent2;
-            //timer2.Start();
         }
 
         private void OnTimedEvent(Object source, ElapsedEventArgs e)
         {
             (source as System.Timers.Timer).Stop();
             DoLoop();
-            (source as System.Timers.Timer).Start();
-        }
-
-        private void OnTimedEvent2(Object source, ElapsedEventArgs e)
-        {
-            (source as System.Timers.Timer).Stop();
-            DoDraw();
             (source as System.Timers.Timer).Start();
         }
 

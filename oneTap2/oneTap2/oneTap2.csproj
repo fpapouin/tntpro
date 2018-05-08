@@ -56,7 +56,6 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Mouse.cs" />
-    <Compile Include="Painter.cs" />
     <Compile Include="PartialClass.cs">
       <SubType>Form</SubType>
     </Compile>
