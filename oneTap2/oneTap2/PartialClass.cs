@@ -17,7 +17,7 @@ namespace oneTap2
 
         private void DoLoop()
         {
-            if (Mouse.IsMouse3Down() && Mouse.IsMouseCentered(new Point(1920 / 2, 1080 / 2)))
+            if (Mouse.IsMouse3Down(mouseKey) && Mouse.IsMouseCentered(new Point(1920 / 2, 1080 / 2)))
             {
                 if (chrono.ElapsedMilliseconds > minElapsedMs)
                 {

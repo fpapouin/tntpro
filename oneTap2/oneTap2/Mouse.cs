@@ -28,13 +28,11 @@ namespace oneTap2
         }
 
         //True if mouse3 is down
-        public static bool IsMouse3Down()
+        public static bool IsMouse3Down(int key)
         {
             //MSB of byte is true 0000 0000 1000 0000
             //0x04 = virtual key of middle mouse buton
-            //return (GetKeyState(0x04) & 0x80) == 128;
-            //Mouse5
-            return (GetKeyState(0x06) & 0x80) == 128;
+            return (GetKeyState(key) & 0x80) == 128;
         }
 
         //OneClick

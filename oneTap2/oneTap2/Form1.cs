@@ -24,6 +24,7 @@ namespace oneTap2
         long minElapsedMs = 100;
         float minDiff = 20.0f;
         int recSize = 5;
+        int mouseKey = 0x04;
 
         private void Form1_Shown(object sender, EventArgs e)
         {
@@ -47,6 +48,7 @@ namespace oneTap2
                     if (line.Contains("minElapsedMs")) minElapsedMs = Convert.ToInt64(line.Split('=').Last());
                     if (line.Contains("minDiff")) minDiff = Convert.ToSingle(line.Split('=').Last());
                     if (line.Contains("recSize")) recSize = Convert.ToInt32(line.Split('=').Last());
+                    if (line.Contains("mouseKey")) mouseKey = Convert.ToInt32(line.Split('=').Last(), 16);
                 }
             }
         }
