@@ -32,7 +32,9 @@ namespace oneTap2
         {
             //MSB of byte is true 0000 0000 1000 0000
             //0x04 = virtual key of middle mouse buton
-            return (GetKeyState(0x04) & 0x80) == 128;
+            //return (GetKeyState(0x04) & 0x80) == 128;
+            //Mouse4
+            return (GetKeyState(0x06) & 0x80) == 128;
         }
 
         //OneClick
