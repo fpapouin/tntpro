@@ -13,6 +13,7 @@ namespace PnGen
     {
         static void Main(string[] args)
         {
+            System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
             string dumpFilepath = @"dump.dmp";
             string palletFilepath = @"volcano_def.RES.vpf";
             string qualifname = "received_power";
