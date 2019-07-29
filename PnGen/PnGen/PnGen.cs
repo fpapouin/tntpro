@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml;
+using Utility;
 
 namespace PnGen
 {
@@ -94,16 +95,49 @@ namespace PnGen
                 {
                     double dumpVal = dumpArray[x, y];
                     outPng.SetPixel(x, y, pallet.undefinedvalue.color);
-                    foreach (ColorFloatIntervalAssociation cfia in pallet.seqfloatassociation)
+
+                    if (dumpVal == pallet.invalidvalue.value)
                     {
-                        if (dumpVal >= cfia.lowerbound && dumpVal < cfia.upperbound)
+                        outPng.SetPixel(x, y, pallet.invalidvalue.color);
+                    }
+                    else if(dumpVal == pallet.notrequiredvalue.value)
+                    {
+                        outPng.SetPixel(x, y, pallet.notrequiredvalue.color);
+                    }
+                    else if (dumpVal == pallet.underthresholdvalue.value)
+                    {
+                        outPng.SetPixel(x, y, pallet.underthresholdvalue.color);
+                    }
+                    else if (dumpVal < pallet.seqfloatassociation.Min(fa => fa.lowerbound) || dumpVal >= pallet.seqfloatassociation.Max(fa => fa.upperbound))
+                    {
+                        outPng.SetPixel(x, y, pallet.underthresholdvalue.color);
+                    }
+                    else
+                    {
+                        foreach (ColorFloatIntervalAssociation cfia in pallet.seqfloatassociation)
                         {
-                            outPng.SetPixel(x, y, cfia.color);
+                            if (dumpVal >= cfia.lowerbound && dumpVal < cfia.upperbound)
+                            {
+                                outPng.SetPixel(x, y, cfia.color);
+                            }
                         }
                     }
                 }
             }
+            outPng = ImageUtils.CreateIndexedPng(outPng);
             outPng.Save(outPngPath, System.Drawing.Imaging.ImageFormat.Png);
+        }
+
+        static public Bitmap CreateIndexedImage(Image src)
+        {
+            Bitmap newBmp = new Bitmap(src.Width, src.Height, System.Drawing.Imaging.PixelFormat.Format8bppIndexed);
+
+            using (Graphics gfx = Graphics.FromImage(newBmp))
+            {
+                gfx.DrawImage(src, 0, 0);
+            }
+
+            return newBmp;
         }
 
         static double[,] ReadDump(string filepath)
