@@ -9,7 +9,8 @@ def png_gen(txt_file, pallet_file):
     exe_path = os.path.join(r'\\siradel.local', 'Atlas', 'Radio', 'Resources', 'Softwares', 'Development', 'PnGen', 'PnGen.exe')
     png_path = txt_file.replace('.txt', '.png')
     if not os.path.exists(png_path.replace('.png', '.iso.png')):
-        shutil.copy(png_path, png_path.replace('.png', '.iso.png'))
+        if os.path.exists(png_path):
+            shutil.copy(png_path, png_path.replace('.png', '.iso.png'))
 
     subprocess.run([exe_path, '-d', txt_file, '-p', pallet_file, '-qn', 'received_power', '-qu', 'db_mw', '-o', png_path])
 
