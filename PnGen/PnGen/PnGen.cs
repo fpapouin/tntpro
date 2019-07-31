@@ -110,7 +110,7 @@ namespace PnGen
                     }
                     else if (dumpVal < pallet.seqfloatassociation.Min(fa => fa.lowerbound) || dumpVal >= pallet.seqfloatassociation.Max(fa => fa.upperbound))
                     {
-                        outPng.SetPixel(x, y, pallet.underthresholdvalue.color);
+                        outPng.SetPixel(x, y, pallet.notrequiredvalue.color);
                     }
                     else
                     {
