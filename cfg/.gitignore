@@ -1,12 +1,4 @@
 
 *.*
 !.gitignore
-!0black.cfg
-!0def.cfg
-!0dot.cfg
-!0new.cfg
-!0superblack.cfg
-!autoalias.cfg
-!autobuy.cfg
-!autotroll.cfg
-!autoexec.cfg
+!0*
