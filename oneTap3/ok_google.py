@@ -22,7 +22,10 @@ newsum = 0
 
 
 def is_mouse_down():
-    return win32api.GetKeyState(mouse_key) & 0x80 == 128
+    if win32api.GetCursorPos()==(pyautogui.size().width/2, pyautogui.size().height/2):
+        return win32api.GetKeyState(mouse_key) & 0x80 == 128
+    else:
+        return False
 
 
 def is_cross(image):
@@ -68,8 +71,10 @@ def fake_move():
 def do_loop():
     if is_mouse_down():
         if ok_google() > 150:
-            pyautogui.click(clicks=2, interval=0.25)
+            #pyautogui.click(clicks=2, interval=0.25)
+            pyautogui.mouseDown()
             fake_move()
+            pyautogui.mouseUp()
 
             if debug:
                 print('ok_google')
