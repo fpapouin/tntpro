@@ -72,7 +72,6 @@ namespace ranks
         private void Form1_Load(object sender, EventArgs e)
         {
             tableLayoutPanel1.ColumnCount = 8;
-            //tableLayoutPanel1.RowCount = 0;
             tableLayoutPanel1.ColumnStyles.Clear();
             tableLayoutPanel1.RowStyles.Clear();
             LoadAccounts();
@@ -83,38 +82,20 @@ namespace ranks
                 AddAvatarButtons();
             }
             WindowState = FormWindowState.Maximized;
-            //SaveAccounts();
             SaveRanks();
             Application.Exit();
         }
 
         private void SaveRanks()
         {
-            int minux = 200;
-            using (Bitmap bmp = new Bitmap(tableLayoutPanel1.Width - minux, tableLayoutPanel1.Height - 70))
-            {
-                tableLayoutPanel1.DrawToBitmap(bmp, new Rectangle(Point.Empty, bmp.Size));
-                bmp.Save(@"ranks1.png", ImageFormat.Png);
-            }
-            for (int i = 0; i < 8 * 9; i++)
-            {
-                tableLayoutPanel1.Controls.RemoveAt(0);
-            }
+            SaveRanks("ranks1.png");
 
-            using (Bitmap bmp = new Bitmap(tableLayoutPanel1.Width - minux, tableLayoutPanel1.Height - 70))
-            {
-                tableLayoutPanel1.DrawToBitmap(bmp, new Rectangle(Point.Empty, bmp.Size));
-                bmp.Save(@"ranks2.png", ImageFormat.Png);
-            }
-            for (int i = 0; i < 8 * 9; i++)
-            {
-                tableLayoutPanel1.Controls.RemoveAt(0);
-            }
-            using (Bitmap bmp = new Bitmap(tableLayoutPanel1.Width - minux, tableLayoutPanel1.Height - 70 * 5))
-            {
-                tableLayoutPanel1.DrawToBitmap(bmp, new Rectangle(Point.Empty, bmp.Size));
-                bmp.Save(@"ranks3.png", ImageFormat.Png);
-            }
+            tableLayoutPanel1.Controls.OfType<Button>().Take(8*9).ToList().ForEach(b => b.Visible = false);
+            SaveRanks("ranks2.png");
+
+            tableLayoutPanel1.Controls.OfType<Button>().Take(8*18).ToList().ForEach(b => b.Visible = false);
+            SaveRanks("ranks3.png", removedHeight: 70 * 5);
+
             Image img1 = Image.FromFile("ranks1.png");
             Image img2 = Image.FromFile("ranks2.png");
             Image img3 = Image.FromFile("ranks3.png");
@@ -125,6 +106,15 @@ namespace ranks
                 g.DrawImage(img2, 0, img1.Height);
                 g.DrawImage(img3, 0, img1.Height + img2.Height);
                 bmp.Save(@"ranks.png", ImageFormat.Png);
+            }
+        }
+
+        private void SaveRanks(string filename, int removedWidth = 200, int removedHeight = 70)
+        {
+            using (Bitmap bmp = new Bitmap(tableLayoutPanel1.Width - removedWidth, tableLayoutPanel1.Height - removedHeight))
+            {
+                tableLayoutPanel1.DrawToBitmap(bmp, new Rectangle(Point.Empty, bmp.Size));
+                bmp.Save(filename, ImageFormat.Png);
             }
         }
 
@@ -147,22 +137,16 @@ namespace ranks
             }
         }
 
-        private void SaveAccounts()
-        {
-            string s = string.Empty;
-            foreach (var account in Accounts)
-            {
-                s += account.Key + Environment.NewLine + account.Value.wingman + Environment.NewLine + account.Value.compet + Environment.NewLine + account.Value.url + Environment.NewLine + "`" + Environment.NewLine;
-            }
-            File.WriteAllText("ranks.txt", s);
-        }
-
         private void AddAvatarButtons()
         {
             int i = 0;
-            foreach (var account in Accounts.OrderByDescending(a => a.Value.compet).ThenByDescending(a => a.Value.wingman))
+            int point = 0;
+            foreach (var account in Accounts.OrderByDescending(a => a.Value.compet + a.Value.wingman).ThenByDescending(a => a.Value.wingman))
             {
                 i++;
+                if ((account.Value.compet + account.Value.wingman) == point)
+                    i--;
+                point = account.Value.compet + account.Value.wingman;
 
                 Button r = new Button();
                 tableLayoutPanel1.Controls.Add(r);
