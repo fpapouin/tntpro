@@ -1,6 +1,6 @@
 Tiger
 1
-4
+3
 https://steamcommunity.com/profiles/76561197960378169/
 `
 le tarteur
@@ -24,8 +24,8 @@ Puppy Boy
 https://steamcommunity.com/id/stevenlr
 `
 NolAkame
-16
-12
+15
+13
 https://steamcommunity.com/id/ThomasHeroOfTime
 `
 LaBambi
@@ -35,7 +35,7 @@ https://steamcommunity.com/profiles/76561198967078903
 `
 WyHzO
 0
-14
+13
 https://steamcommunity.com/id/wyhzo
 `
 lemerou
@@ -54,8 +54,8 @@ GAMBIE
 https://steamcommunity.com/profiles/76561198897576691
 `
 Tex
-0
-7
+14
+6
 https://steamcommunity.com/profiles/76561198985558928
 `
 Micka'z
@@ -230,6 +230,11 @@ https://steamcommunity.com/profiles/76561198998035356
 `
 Obi Wan Can Blow Me
 0
-7
+6
 https://steamcommunity.com/profiles/76561198013889532/
+`
+Cyka Tex
+14
+13
+https://steamcommunity.com/id/SPINOZAUR76/
 `
