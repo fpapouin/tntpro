@@ -4,7 +4,7 @@ Tiger
 https://steamcommunity.com/profiles/76561197960378169/
 `
 le tarteur
-0
+12
 8
 https://steamcommunity.com/profiles/76561197960856067
 `
@@ -25,7 +25,7 @@ https://steamcommunity.com/id/stevenlr
 `
 NolAkame
 15
-13
+14
 https://steamcommunity.com/id/ThomasHeroOfTime
 `
 LaBambi
@@ -35,7 +35,7 @@ https://steamcommunity.com/profiles/76561198967078903
 `
 WyHzO
 0
-13
+14
 https://steamcommunity.com/id/wyhzo
 `
 lemerou
@@ -65,7 +65,7 @@ https://steamcommunity.com/id/mkl35
 `
 DrNv4
 0
-12
+11
 https://steamcommunity.com/profiles/76561198986738740
 `
 ElGambinos
@@ -80,7 +80,7 @@ https://steamcommunity.com/id/fantastictoad
 `
 Feuillou
 15
-11
+12
 https://steamcommunity.com/profiles/76561198878633876
 `
 Feuillouxx 
@@ -135,7 +135,7 @@ https://steamcommunity.com/profiles/76561197960533173
 `
 le_dahut
 14
-12
+13
 https://steamcommunity.com/profiles/76561197960306957
 `
 MainRo'
@@ -170,7 +170,7 @@ https://steamcommunity.com/id/ishigo974
 `
 mxm'
 0
-13
+12
 https://steamcommunity.com/profiles/76561198008173372
 `
 PetitAbricotDesIles
@@ -195,7 +195,7 @@ https://steamcommunity.com/profiles/76561198996797608
 `
 UniBran
 0
-13
+12
 https://steamcommunity.com/profiles/76561198115345960
 `
 Wyhzo2
@@ -235,6 +235,6 @@ https://steamcommunity.com/profiles/76561198013889532/
 `
 Cyka Tex
 14
-13
+14
 https://steamcommunity.com/id/SPINOZAUR76/
 `
