@@ -83,18 +83,18 @@ namespace ranks
             }
             WindowState = FormWindowState.Maximized;
             SaveRanks();
-            Application.Exit();
+            //Application.Exit();
         }
 
         private void SaveRanks()
         {
             SaveRanks("ranks1.png");
 
-            tableLayoutPanel1.Controls.OfType<Button>().Take(8*9).ToList().ForEach(b => b.Visible = false);
+            tableLayoutPanel1.Controls.OfType<Button>().Take(8 * 9).ToList().ForEach(b => b.Visible = false);
             SaveRanks("ranks2.png");
 
-            tableLayoutPanel1.Controls.OfType<Button>().Take(8*18).ToList().ForEach(b => b.Visible = false);
-            SaveRanks("ranks3.png", removedHeight: 70 * 5);
+            tableLayoutPanel1.Controls.OfType<Button>().Take(8 * 18).ToList().ForEach(b => b.Visible = false);
+            SaveRanks("ranks3.png", removedHeight: 70 * 4);
 
             Image img1 = Image.FromFile("ranks1.png");
             Image img2 = Image.FromFile("ranks2.png");
