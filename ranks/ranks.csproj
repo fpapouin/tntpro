@@ -80,6 +80,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="png\bronze-1.png" />
+    <Content Include="png\bronze-2.png" />
+    <Content Include="png\bronze-3.png" />
+    <Content Include="png\bronze-4.png" />
+    <Content Include="png\bronze-5.png" />
+    <Content Include="png\bronze-6.png" />
     <Content Include="png\dinstinguished-master-guardian-wingman.png" />
     <Content Include="png\Global-elite-wingman.png" />
     <Content Include="png\global-elite.png" />
@@ -97,10 +103,14 @@
     <Content Include="png\master-guardian-1-wingman.png" />
     <Content Include="png\master-guardian-2-wingman.png" />
     <Content Include="png\master-guardian-elite-wingman.png" />
+    <Content Include="png\master-guardian-king.png" />
+    <Content Include="png\mega-elite.png" />
+    <Content Include="png\monster-elite.png" />
     <Content Include="png\nova-1.png" />
     <Content Include="png\nova-2.png" />
     <Content Include="png\nova-3.png" />
     <Content Include="png\nova4.png" />
+    <Content Include="png\plastic-6.png" />
     <Content Include="png\sherif.png" />
     <Content Include="png\silver-1-wingman.png" />
     <Content Include="png\silver-1.png" />
@@ -118,6 +128,7 @@
     <Content Include="png\supreme-elite-master-class.png" />
     <Content Include="png\unrank-wingman.png" />
     <Content Include="png\unranked.png" />
+    <Content Include="png\wood-6.png" />
     <Content Include="ranks.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

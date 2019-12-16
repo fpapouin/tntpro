@@ -15,12 +15,12 @@ https://steamcommunity.com/profiles/76561198216913655
 `
 Los Van Sen
 5
-11
+12
 https://steamcommunity.com/profiles/76561198049684581
 `
 Puppy Boy
 0
-6
+7
 https://steamcommunity.com/id/stevenlr
 `
 NolAkame
@@ -80,7 +80,7 @@ https://steamcommunity.com/id/fantastictoad
 `
 Feuillou
 15
-12
+13
 https://steamcommunity.com/profiles/76561198878633876
 `
 Feuillouxx 
@@ -242,4 +242,9 @@ MnRRRRRRRRRRRRRR
 0
 0
 https://steamcommunity.com/profiles/76561199008260606
+`
+feuilloufloux
+0
+0
+https://steamcommunity.com/profiles/76561199010821754/
 `

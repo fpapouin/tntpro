@@ -24,6 +24,7 @@ namespace ranks
         readonly Dictionary<string, Profile> Accounts = new Dictionary<string, Profile>();
         readonly Dictionary<int, string> WingmanRanks = new Dictionary<int, string>();
         readonly Dictionary<int, string> Ranks = new Dictionary<int, string>();
+        readonly List<string> Fulls = new List<string>();
 
         public Form1()
         {
@@ -67,6 +68,36 @@ namespace ranks
             Ranks.Add(16, "legendary-eagle-master.png");
             Ranks.Add(17, "supreme-elite-master-class.png");
             Ranks.Add(18, "global-elite.png");
+
+            Fulls.Add("wood-6.png");
+            Fulls.Add("plastic-6.png");
+            Fulls.Add("bronze-1.png");
+            Fulls.Add("bronze-2.png");
+            Fulls.Add("bronze-3.png");
+            Fulls.Add("bronze-4.png");
+            Fulls.Add("bronze-5.png");
+            Fulls.Add("bronze-6.png");
+            Fulls.Add("silver-1.png");
+            Fulls.Add("silver2.png");
+            Fulls.Add("silver-3.png");
+            Fulls.Add("silver4-csgo.png");
+            Fulls.Add("silver-5.png");
+            Fulls.Add("silver-6.png");
+            Fulls.Add("nova-1.png");
+            Fulls.Add("nova-2.png");
+            Fulls.Add("nova-3.png");
+            Fulls.Add("nova4.png");
+            Fulls.Add("master-gardian.png");
+            Fulls.Add("master-gardian-2.png");
+            Fulls.Add("master-gardian-elite.png");
+            Fulls.Add("master-guardian-king.png");
+            Fulls.Add("sherif.png");
+            Fulls.Add("legendary-eagle.png");
+            Fulls.Add("legendary-eagle-master.png");
+            Fulls.Add("supreme-elite-master-class.png");
+            Fulls.Add("global-elite.png");
+            Fulls.Add("mega-elite.png");
+            Fulls.Add("monster-elite.png");
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -82,7 +113,7 @@ namespace ranks
                 AddAvatarButtons();
             }
             WindowState = FormWindowState.Maximized;
-            SaveRanks();
+            //SaveRanks();
             //Application.Exit();
         }
 
@@ -141,6 +172,7 @@ namespace ranks
         {
             int i = 0;
             int point = 0;
+            int f = 28;
             foreach (var account in Accounts.OrderByDescending(a => a.Value.compet + a.Value.wingman).ThenByDescending(a => a.Value.wingman))
             {
                 i++;
@@ -152,6 +184,10 @@ namespace ranks
                 tableLayoutPanel1.Controls.Add(r);
                 r.Height = 100;
                 r.Width = 200;
+                r.BackgroundImage = Image.FromFile("png/" + Fulls[f]);
+                if (f>0)
+                    f--;
+                r.BackgroundImageLayout = ImageLayout.Zoom;
                 r.TabStop = false;
                 r.FlatStyle = FlatStyle.Flat;
                 r.FlatAppearance.BorderSize = 0;
