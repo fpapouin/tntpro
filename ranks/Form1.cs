@@ -91,6 +91,13 @@ namespace ranks
             Fulls.Add("master-gardian-2.png");
             Fulls.Add("master-gardian-elite.png");
             Fulls.Add("master-guardian-king.png");
+            Fulls.Add("black-1.png");
+            Fulls.Add("black-2.png");
+            Fulls.Add("black-3.png");
+            Fulls.Add("black-4.png");
+            Fulls.Add("black-5.png");
+            Fulls.Add("black-6.png");
+            Fulls.Add("black-7.png");
             Fulls.Add("sherif.png");
             Fulls.Add("legendary-eagle.png");
             Fulls.Add("legendary-eagle-master.png");
@@ -114,6 +121,21 @@ namespace ranks
             }
             WindowState = FormWindowState.Maximized;
             //SaveRanks();
+
+            /*int x = 319;
+            int y = 35;
+            int w = 107;
+            int h = 42;
+            using (Bitmap bmp = new Bitmap(w, h))
+            {
+                Graphics g = Graphics.FromImage(bmp);
+                g.DrawImage(Image.FromFile(@"C:\Users\Shadow\Documents\tntpro\ranks\eRtu8qYH4HROcwXiMaC-bxYUWNKfBOH7UcCwZnOtsj0.jpg"),
+                    new Rectangle(0, 0, w, h),
+                    new Rectangle(x, y, w, h),
+                    GraphicsUnit.Pixel);
+                bmp.Save(@"black-6.png", ImageFormat.Png);
+            }*/
+
             //Application.Exit();
         }
 
@@ -172,7 +194,7 @@ namespace ranks
         {
             int i = 0;
             int point = 0;
-            int f = 28;
+            int f = Fulls.Count - 1;
             foreach (var account in Accounts.OrderByDescending(a => a.Value.compet + a.Value.wingman).ThenByDescending(a => a.Value.wingman))
             {
                 i++;
@@ -184,8 +206,9 @@ namespace ranks
                 tableLayoutPanel1.Controls.Add(r);
                 r.Height = 100;
                 r.Width = 200;
-                r.BackgroundImage = Image.FromFile("png/" + Fulls[f]);
-                if (f>0)
+                if (point > 0)
+                //r.BackgroundImage = Image.FromFile("png/" + Fulls[f]);
+                if (f > 0)
                     f--;
                 r.BackgroundImageLayout = ImageLayout.Zoom;
                 r.TabStop = false;
@@ -207,6 +230,7 @@ namespace ranks
                 b.FlatStyle = FlatStyle.Flat;
                 b.FlatAppearance.BorderSize = 0;
                 b.Name = account.Key;
+                new ToolTip().SetToolTip(b, b.Name);
 
                 //Add compet
                 Button c = new Button();
