@@ -105,6 +105,7 @@ namespace ranks
             Fulls.Add("global-elite.png");
             Fulls.Add("mega-elite.png");
             Fulls.Add("monster-elite.png");
+            Fulls.Reverse();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -120,7 +121,6 @@ namespace ranks
                 AddAvatarButtons();
             }
             WindowState = FormWindowState.Maximized;
-            //SaveRanks();
 
             /*int x = 319;
             int y = 35;
@@ -136,7 +136,8 @@ namespace ranks
                 bmp.Save(@"black-6.png", ImageFormat.Png);
             }*/
 
-            //Application.Exit();
+            SaveRanks();
+            Application.Exit();
         }
 
         private void SaveRanks()
@@ -194,32 +195,33 @@ namespace ranks
         {
             int i = 0;
             int point = 0;
-            int f = Fulls.Count - 1;
             foreach (var account in Accounts.OrderByDescending(a => a.Value.compet + a.Value.wingman).ThenByDescending(a => a.Value.wingman))
             {
-                i++;
-                if ((account.Value.compet + account.Value.wingman) == point)
-                    i--;
+                if ((account.Value.compet + account.Value.wingman) != point)
+                {
+                    i++;
+                }
                 point = account.Value.compet + account.Value.wingman;
+                if (point == 0)
+                    i++;
 
+                //Add point
                 Button r = new Button();
                 tableLayoutPanel1.Controls.Add(r);
                 r.Height = 100;
                 r.Width = 200;
-                if (point > 0)
-                //r.BackgroundImage = Image.FromFile("png/" + Fulls[f]);
-                if (f > 0)
-                    f--;
+                r.BackgroundImage = Image.FromFile("png/" + Fulls[i]);
                 r.BackgroundImageLayout = ImageLayout.Zoom;
                 r.TabStop = false;
                 r.FlatStyle = FlatStyle.Flat;
                 r.FlatAppearance.BorderSize = 0;
                 r.Name = account.Key;
                 r.Text = "" + i;
-                r.TextAlign = ContentAlignment.MiddleRight;
-                r.ForeColor = Color.White;
-                r.Font = new Font(r.Font.FontFamily, 70);
+                r.TextAlign = ContentAlignment.BottomRight;
+                r.ForeColor = Color.Yellow;
+                r.Font = new Font(r.Font.FontFamily, 20, FontStyle.Bold);
 
+                //Add avatar
                 Button b = new Button();
                 tableLayoutPanel1.Controls.Add(b);
                 b.Height = 100;
