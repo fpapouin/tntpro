@@ -70,6 +70,16 @@ namespace ranks
             Ranks.Add(18, "global-elite.png");
 
             Fulls.Add("wood-6.png");
+            Fulls.Add("wood-6.png");
+            Fulls.Add("wood-6.png");
+            Fulls.Add("wood-6.png");
+            Fulls.Add("wood-6.png");
+            Fulls.Add("wood-6.png");
+            Fulls.Add("wood-6.png");
+            Fulls.Add("wood-6.png");
+            Fulls.Add("wood-6.png");
+            Fulls.Add("wood-6.png");
+            Fulls.Add("wood-6.png");
             Fulls.Add("plastic-6.png");
             Fulls.Add("bronze-1.png");
             Fulls.Add("bronze-2.png");
@@ -135,9 +145,9 @@ namespace ranks
                     GraphicsUnit.Pixel);
                 bmp.Save(@"black-6.png", ImageFormat.Png);
             }*/
-
+            //*
             SaveRanks();
-            Application.Exit();
+            Application.Exit();//*/
         }
 
         private void SaveRanks()
@@ -161,6 +171,12 @@ namespace ranks
                 g.DrawImage(img3, 0, img1.Height + img2.Height);
                 bmp.Save(@"ranks.png", ImageFormat.Png);
             }
+            img1.Dispose();
+            img2.Dispose();
+            img3.Dispose();
+            File.Delete("ranks1.png");
+            File.Delete("ranks2.png");
+            File.Delete("ranks3.png");
         }
 
         private void SaveRanks(string filename, int removedWidth = 200, int removedHeight = 70)
@@ -195,8 +211,9 @@ namespace ranks
         {
             int i = 0;
             int point = 0;
-            foreach (var account in Accounts.OrderByDescending(a => a.Value.compet + a.Value.wingman).ThenByDescending(a => a.Value.wingman))
-            {
+            //foreach (var account in Accounts.OrderByDescending(a => a.Value.compet + a.Value.wingman).ThenByDescending(a => a.Value.wingman))
+            foreach (var account in Accounts.OrderByDescending(a => a.Value.compet).ThenByDescending(a => a.Value.wingman))
+                {
                 if ((account.Value.compet + account.Value.wingman) != point)
                 {
                     i++;
@@ -210,7 +227,7 @@ namespace ranks
                 tableLayoutPanel1.Controls.Add(r);
                 r.Height = 100;
                 r.Width = 200;
-                r.BackgroundImage = Image.FromFile("png/" + Fulls[i]);
+                //r.BackgroundImage = Image.FromFile("png/" + Fulls[i]);
                 r.BackgroundImageLayout = ImageLayout.Zoom;
                 r.TabStop = false;
                 r.FlatStyle = FlatStyle.Flat;
@@ -220,6 +237,7 @@ namespace ranks
                 r.TextAlign = ContentAlignment.BottomRight;
                 r.ForeColor = Color.Yellow;
                 r.Font = new Font(r.Font.FontFamily, 20, FontStyle.Bold);
+                r.Font = new Font(r.Font.FontFamily, 70, FontStyle.Bold);
 
                 //Add avatar
                 Button b = new Button();
