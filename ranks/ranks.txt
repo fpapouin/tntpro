@@ -1,6 +1,6 @@
 Tiger
 1
-3
+2
 https://steamcommunity.com/profiles/76561197960378169/
 `
 legaloupio
@@ -10,7 +10,7 @@ https://steamcommunity.com/profiles/76561197960533173
 `
 le_dahut
 14
-13
+11
 https://steamcommunity.com/profiles/76561197960306957
 `
 le tarteur
@@ -19,8 +19,8 @@ le tarteur
 https://steamcommunity.com/profiles/76561197960856067
 `
 galpipo
-9
-16
+10
+15
 https://steamcommunity.com/profiles/76561197996565738
 `
 gerbille
@@ -30,7 +30,7 @@ https://steamcommunity.com/profiles/76561197960354652
 `
 Inuit'TeX
 17
-12
+11
 https://steamcommunity.com/id/pierrecaline76
 `
 AlfTex
@@ -40,7 +40,7 @@ https://steamcommunity.com/id/SPINOZAUR76/
 `
 Tex le petit yoda
 14
-6
+7
 https://steamcommunity.com/profiles/76561198985558928
 `
 smurf
@@ -70,7 +70,7 @@ https://steamcommunity.com/profiles/76561198409217510
 `
 DrNv4
 0
-11
+12
 https://steamcommunity.com/profiles/76561198986738740
 `
 MnRRRRRRRRRRRRRR
@@ -79,7 +79,7 @@ MnRRRRRRRRRRRRRR
 https://steamcommunity.com/profiles/76561199008260606
 `
 Los Van Sen
-5
+4
 12
 https://steamcommunity.com/profiles/76561198049684581
 `
@@ -95,7 +95,7 @@ https://steamcommunity.com/profiles/76561198965888203
 `
 NolAkame
 15
-14
+13
 https://steamcommunity.com/id/ThomasHeroOfTime
 `
 UniBran
@@ -105,7 +105,7 @@ https://steamcommunity.com/profiles/76561198115345960
 `
 Obi Wan Can Blow Me
 0
-5
+6
 https://steamcommunity.com/profiles/76561198013889532/
 `
 ElGambinos
@@ -115,7 +115,7 @@ https://steamcommunity.com/profiles/76561198042469583
 `
 GAMBIE
 0
-5
+4
 https://steamcommunity.com/profiles/76561198897576691
 `
 LaBambi
@@ -125,7 +125,7 @@ https://steamcommunity.com/profiles/76561198967078903
 `
 Feuillou
 15
-13
+12
 https://steamcommunity.com/profiles/76561198878633876
 `
 Feuillouxx 
@@ -135,7 +135,7 @@ https://steamcommunity.com/profiles/76561198991068514
 `
 feuilloufloux
 0
-0
+8
 https://steamcommunity.com/profiles/76561199010821754/
 `
 WyHzO
@@ -200,7 +200,7 @@ https://steamcommunity.com/id/ishigo974
 `
 mxm'
 0
-14
+13
 https://steamcommunity.com/profiles/76561198008173372
 `
 lemerou
@@ -215,7 +215,7 @@ https://steamcommunity.com/id/tarteur
 `
 Frost
 0
-7
+6
 https://steamcommunity.com/id/raphaoul
 `
 Hisoka
