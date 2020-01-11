@@ -10,12 +10,12 @@ https://steamcommunity.com/profiles/76561197960533173
 `
 le_dahut
 14
-11
+12
 https://steamcommunity.com/profiles/76561197960306957
 `
 le tarteur
 12
-8
+9
 https://steamcommunity.com/profiles/76561197960856067
 `
 galpipo
@@ -25,12 +25,12 @@ https://steamcommunity.com/profiles/76561197996565738
 `
 gerbille
 15
-13
+14
 https://steamcommunity.com/profiles/76561197960354652
 `
 Inuit'TeX
 17
-11
+10
 https://steamcommunity.com/id/pierrecaline76
 `
 AlfTex
@@ -65,7 +65,7 @@ https://steamcommunity.com/profiles/76561198084548328
 `
 MnR'
 0
-12
+13
 https://steamcommunity.com/profiles/76561198409217510
 `
 DrNv4
@@ -95,7 +95,7 @@ https://steamcommunity.com/profiles/76561198965888203
 `
 NolAkame
 15
-13
+12
 https://steamcommunity.com/id/ThomasHeroOfTime
 `
 UniBran
@@ -105,12 +105,12 @@ https://steamcommunity.com/profiles/76561198115345960
 `
 Obi Wan Can Blow Me
 0
-6
+5
 https://steamcommunity.com/profiles/76561198013889532/
 `
 ElGambinos
 14
-11
+12
 https://steamcommunity.com/profiles/76561198042469583
 `
 GAMBIE
@@ -124,7 +124,7 @@ LaBambi
 https://steamcommunity.com/profiles/76561198967078903
 `
 Feuillou
-15
+16
 12
 https://steamcommunity.com/profiles/76561198878633876
 `
@@ -135,7 +135,7 @@ https://steamcommunity.com/profiles/76561198991068514
 `
 feuilloufloux
 0
-8
+10
 https://steamcommunity.com/profiles/76561199010821754/
 `
 WyHzO
@@ -174,7 +174,7 @@ Suteben
 https://steamcommunity.com/profiles/76561199003926696
 `
 Shteuf
-15
+16
 11
 https://steamcommunity.com/id/shteuf
 `
@@ -220,12 +220,12 @@ https://steamcommunity.com/id/raphaoul
 `
 Hisoka
 0
-8
+9
 https://steamcommunity.com/id/Hisokaka
 `
 LapOar
 0
-9
+10
 https://steamcommunity.com/id/LapOar
 `
 RedOusHi
@@ -240,7 +240,7 @@ https://steamcommunity.com/profiles/76561197992444582
 `
 Kitsuney
 0
-7
+8
 https://steamcommunity.com/profiles/76561198993355145
 `
 ...C.E.M...coco

@@ -147,6 +147,7 @@ namespace ranks
             }*/
             //*
             SaveRanks();
+            Upload();
             Application.Exit();//*/
         }
 
@@ -210,17 +211,19 @@ namespace ranks
         private void AddAvatarButtons()
         {
             int i = 0;
-            int point = 0;
+            int position = 0;
+            int lastPoint = 0;
             //foreach (var account in Accounts.OrderByDescending(a => a.Value.compet + a.Value.wingman).ThenByDescending(a => a.Value.wingman))
             foreach (var account in Accounts.OrderByDescending(a => a.Value.compet).ThenByDescending(a => a.Value.wingman))
+            {
+                i++;
+                if ((account.Value.compet + account.Value.wingman) != lastPoint)
                 {
-                if ((account.Value.compet + account.Value.wingman) != point)
-                {
-                    i++;
+                    position = i;
                 }
-                point = account.Value.compet + account.Value.wingman;
-                if (point == 0)
-                    i++;
+                lastPoint = account.Value.compet + account.Value.wingman;
+                if (lastPoint == 0) // for not ranked
+                    i=0;
 
                 //Add point
                 Button r = new Button();
@@ -233,7 +236,7 @@ namespace ranks
                 r.FlatStyle = FlatStyle.Flat;
                 r.FlatAppearance.BorderSize = 0;
                 r.Name = account.Key;
-                r.Text = "" + i;
+                r.Text = "" + position;
                 r.TextAlign = ContentAlignment.BottomRight;
                 r.ForeColor = Color.Yellow;
                 r.Font = new Font(r.Font.FontFamily, 20, FontStyle.Bold);
@@ -298,6 +301,18 @@ namespace ranks
                             }
                         }
                     }
+                }
+            }
+        }
+
+        private void Upload()
+        {
+            if (Environment.GetCommandLineArgs().Length == 3)
+            {
+                using (System.Net.WebClient wc = new System.Net.WebClient())
+                {
+                    wc.Credentials = new System.Net.NetworkCredential(Environment.GetCommandLineArgs()[1], Environment.GetCommandLineArgs()[2]);
+                    wc.UploadFile("ftp://ftpperso.free.fr/ranks.png", System.Net.WebRequestMethods.Ftp.UploadFile, "ranks.png");
                 }
             }
         }
