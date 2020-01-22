@@ -120,7 +120,7 @@ namespace ranks
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            tableLayoutPanel1.ColumnCount = 8;
+            tableLayoutPanel1.ColumnCount = 12;
             tableLayoutPanel1.ColumnStyles.Clear();
             tableLayoutPanel1.RowStyles.Clear();
             LoadAccounts();
@@ -130,8 +130,8 @@ namespace ranks
                 FindAvatar();
                 AddAvatarButtons();
             }
+            this.Scale(new SizeF(0.7F, 0.7F));
             WindowState = FormWindowState.Maximized;
-
             /*int x = 319;
             int y = 35;
             int w = 107;
@@ -146,7 +146,8 @@ namespace ranks
                 bmp.Save(@"black-6.png", ImageFormat.Png);
             }*/
             //*
-            SaveRanks();
+            //SaveRanks();
+            SaveRanks("ranks.png", 300, 65);
             Upload();
             Application.Exit();//*/
         }
@@ -159,17 +160,18 @@ namespace ranks
             SaveRanks("ranks2.png");
 
             tableLayoutPanel1.Controls.OfType<Button>().Take(8 * 18).ToList().ForEach(b => b.Visible = false);
-            SaveRanks("ranks3.png", removedHeight: 70 * 4);
+            SaveRanks("ranks3.png", removedHeight: 70 * 11);
 
             Image img1 = Image.FromFile("ranks1.png");
             Image img2 = Image.FromFile("ranks2.png");
             Image img3 = Image.FromFile("ranks3.png");
-            using (Bitmap bmp = new Bitmap(img1.Width, img1.Height + img2.Height + img3.Height))
+            int separator = 1;
+            using (Bitmap bmp = new Bitmap(img1.Width + img2.Width + separator, img1.Height + img3.Height + separator))
             {
                 Graphics g = Graphics.FromImage(bmp);
                 g.DrawImage(img1, 0, 0);
-                g.DrawImage(img2, 0, img1.Height);
-                g.DrawImage(img3, 0, img1.Height + img2.Height);
+                g.DrawImage(img2, img1.Width + separator, 0);
+                g.DrawImage(img3, img1.Width / 2, img1.Height + separator);
                 bmp.Save(@"ranks.png", ImageFormat.Png);
             }
             img1.Dispose();
@@ -223,7 +225,10 @@ namespace ranks
                 }
                 lastPoint = account.Value.compet + account.Value.wingman;
                 if (lastPoint == 0) // for not ranked
-                    i=0;
+                {
+                    i = 0;
+                    continue;
+                }
 
                 //Add point
                 Button r = new Button();
@@ -238,15 +243,24 @@ namespace ranks
                 r.Name = account.Key;
                 r.Text = "" + position;
                 r.TextAlign = ContentAlignment.BottomRight;
-                r.ForeColor = Color.Yellow;
-                r.Font = new Font(r.Font.FontFamily, 20, FontStyle.Bold);
-                r.Font = new Font(r.Font.FontFamily, 70, FontStyle.Bold);
+                r.ForeColor = Color.BlueViolet;
+                r.Font = new Font(r.Font.FontFamily, 35, FontStyle.Bold);
+                if (position <= 30)
+                    r.ForeColor = Color.OrangeRed;
+                if (position <= 20)
+                    r.ForeColor = Color.Green;
+                if (position <= 10)
+                    r.ForeColor = Color.RoyalBlue;
+                if (position <= 3)
+                    r.ForeColor = Color.Yellow;
+
+                //r.Font = new Font(r.Font.FontFamily, 70, FontStyle.Bold);
 
                 //Add avatar
                 Button b = new Button();
                 tableLayoutPanel1.Controls.Add(b);
                 b.Height = 100;
-                b.Width = 200;
+                b.Width = 100;
                 b.BackgroundImage = Image.FromFile("png/" + account.Key + ".png");
                 b.BackgroundImageLayout = ImageLayout.Zoom;
                 b.TabStop = false;
