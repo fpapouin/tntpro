@@ -4,8 +4,8 @@ Tiger
 https://steamcommunity.com/profiles/76561197960378169/
 `
 legaloupio
-16
-12
+17
+13
 https://steamcommunity.com/profiles/76561197960533173
 `
 le_dahut
@@ -14,8 +14,8 @@ le_dahut
 https://steamcommunity.com/profiles/76561197960306957
 `
 le tarteur
-12
-10
+13
+11
 https://steamcommunity.com/profiles/76561197960856067
 `
 galpipo
@@ -33,6 +33,26 @@ Inuit'TeX
 10
 https://steamcommunity.com/id/pierrecaline76
 `
+AlfTex
+14
+14
+https://steamcommunity.com/id/SPINOZAUR76/
+`
+Tex le petit yoda
+14
+7
+https://steamcommunity.com/profiles/76561198985558928
+`
+smurf
+0
+0
+https://steamcommunity.com/profiles/76561198996797608
+`
+MiNeDiAmOnDs76
+0
+0
+https://steamcommunity.com/profiles/76561198993561651
+`
 MainRo'
 0
 14
@@ -45,7 +65,7 @@ https://steamcommunity.com/profiles/76561198084548328
 `
 MnR'
 0
-12
+13
 https://steamcommunity.com/profiles/76561198409217510
 `
 Cyka
@@ -64,8 +84,8 @@ Los Van Sen
 https://steamcommunity.com/profiles/76561198049684581
 `
 Lars Van Sen
-0
-12
+14
+13
 https://steamcommunity.com/profiles/76561198900437043
 `
 Lars
@@ -155,7 +175,7 @@ https://steamcommunity.com/profiles/76561199003926696
 `
 Shteuf
 16
-11
+10
 https://steamcommunity.com/id/shteuf
 `
 Fantastic Toad
@@ -200,7 +220,7 @@ https://steamcommunity.com/id/raphaoul
 `
 Hisoka
 15
-10
+11
 https://steamcommunity.com/id/Hisokaka
 `
 LapOar
@@ -227,4 +247,9 @@ https://steamcommunity.com/profiles/76561198993355145
 0
 6
 https://steamcommunity.com/profiles/76561197992898060
+`
+bogoss2012
+0
+6
+https://steamcommunity.com/profiles/76561198109619241
 `

@@ -120,7 +120,7 @@ namespace ranks
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            tableLayoutPanel1.ColumnCount = 12;
+            tableLayoutPanel1.ColumnCount = 16;
             tableLayoutPanel1.ColumnStyles.Clear();
             tableLayoutPanel1.RowStyles.Clear();
             LoadAccounts();
@@ -130,7 +130,7 @@ namespace ranks
                 FindAvatar();
                 AddAvatarButtons();
             }
-            this.Scale(new SizeF(0.7F, 0.7F));
+            this.Scale(new SizeF(0.65F, 0.65F));
             WindowState = FormWindowState.Maximized;
             /*int x = 319;
             int y = 35;
@@ -146,40 +146,9 @@ namespace ranks
                 bmp.Save(@"black-6.png", ImageFormat.Png);
             }*/
             //*
-            //SaveRanks();
-            SaveRanks("ranks.png", 300, 65);
+            SaveRanks("ranks.png", 20, 100);
             Upload();
             Application.Exit();//*/
-        }
-
-        private void SaveRanks()
-        {
-            SaveRanks("ranks1.png");
-
-            tableLayoutPanel1.Controls.OfType<Button>().Take(8 * 9).ToList().ForEach(b => b.Visible = false);
-            SaveRanks("ranks2.png");
-
-            tableLayoutPanel1.Controls.OfType<Button>().Take(8 * 18).ToList().ForEach(b => b.Visible = false);
-            SaveRanks("ranks3.png", removedHeight: 70 * 11);
-
-            Image img1 = Image.FromFile("ranks1.png");
-            Image img2 = Image.FromFile("ranks2.png");
-            Image img3 = Image.FromFile("ranks3.png");
-            int separator = 1;
-            using (Bitmap bmp = new Bitmap(img1.Width + img2.Width + separator, img1.Height + img3.Height + separator))
-            {
-                Graphics g = Graphics.FromImage(bmp);
-                g.DrawImage(img1, 0, 0);
-                g.DrawImage(img2, img1.Width + separator, 0);
-                g.DrawImage(img3, img1.Width / 2, img1.Height + separator);
-                bmp.Save(@"ranks.png", ImageFormat.Png);
-            }
-            img1.Dispose();
-            img2.Dispose();
-            img3.Dispose();
-            File.Delete("ranks1.png");
-            File.Delete("ranks2.png");
-            File.Delete("ranks3.png");
         }
 
         private void SaveRanks(string filename, int removedWidth = 200, int removedHeight = 70)
@@ -198,13 +167,20 @@ namespace ranks
                 if (data.Replace("\n", "") != string.Empty)
                 {
                     string[] s = data.Split("\n".ToCharArray(), StringSplitOptions.RemoveEmptyEntries);
-                    if (Accounts.ContainsKey(s[0]))
+                    try
                     {
-                        Accounts[s[0]] = new Profile() { wingman = int.Parse(s[1]), compet = int.Parse(s[2]), url = s[3] };
+                        if (Accounts.ContainsKey(s[0]))
+                        {
+                            Accounts[s[0]] = new Profile() { wingman = int.Parse(s[1]), compet = int.Parse(s[2]), url = s[3] };
+                        }
+                        else
+                        {
+                            Accounts.Add(s[0], new Profile() { wingman = int.Parse(s[1]), compet = int.Parse(s[2]), url = s[3] });
+                        }
                     }
-                    else
+                    catch (Exception)
                     {
-                        Accounts.Add(s[0], new Profile() { wingman = int.Parse(s[1]), compet = int.Parse(s[2]), url = s[3] });
+
                     }
                 }
             }
@@ -227,7 +203,7 @@ namespace ranks
                 if (lastPoint == 0) // for not ranked
                 {
                     i = 0;
-                    continue;
+                    //continue;
                 }
 
                 //Add point
@@ -245,13 +221,13 @@ namespace ranks
                 r.TextAlign = ContentAlignment.BottomRight;
                 r.ForeColor = Color.BlueViolet;
                 r.Font = new Font(r.Font.FontFamily, 35, FontStyle.Bold);
-                if (position <= 30)
+                if (position <= 36)
                     r.ForeColor = Color.OrangeRed;
-                if (position <= 20)
+                if (position <= 24)
                     r.ForeColor = Color.Green;
-                if (position <= 10)
+                if (position <= 16)
                     r.ForeColor = Color.RoyalBlue;
-                if (position <= 3)
+                if (position <= 4)
                     r.ForeColor = Color.Yellow;
 
                 //r.Font = new Font(r.Font.FontFamily, 70, FontStyle.Bold);
