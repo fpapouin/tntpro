@@ -188,21 +188,31 @@ namespace ranks
 
         private void AddAvatarButtons()
         {
-            int i = 0;
             int position = 0;
-            int lastPoint = 0;
-            //foreach (var account in Accounts.OrderByDescending(a => a.Value.compet + a.Value.wingman).ThenByDescending(a => a.Value.wingman))
+            var lastAccount = Accounts.FirstOrDefault();
+            int delta = 0;
+            //foreach (var account in Accounts.OrderByDescending(a => a.Value.wingman).ThenByDescending(a => a.Value.compet))
             foreach (var account in Accounts.OrderByDescending(a => a.Value.compet).ThenByDescending(a => a.Value.wingman))
             {
-                i++;
-                if ((account.Value.compet + account.Value.wingman) != lastPoint)
+                if (account.Value.compet != lastAccount.Value.compet)
                 {
-                    position = i;
+                    position++;
+                    position += delta;
+                    delta = 0;
                 }
-                lastPoint = account.Value.compet + account.Value.wingman;
-                if (lastPoint == 0) // for not ranked
+                else if (account.Value.wingman != lastAccount.Value.wingman)
                 {
-                    i = 0;
+                    position++;
+                    position += delta;
+                    delta = 0;
+                }
+                else
+                {
+                    delta++;
+                }
+                lastAccount = account;
+                if (account.Value.compet + account.Value.wingman == 0) // for not ranked
+                {
                     //continue;
                 }
 
@@ -283,11 +293,12 @@ namespace ranks
                         string webData = wc.DownloadString(account.Value.url);
                         foreach (string line in webData.Split('\n'))
                         {
-                            if (line.Contains("playerAvatarAutoSizeInner"))
+                            if (line.Contains("public/images/avatars"))
                             {
                                 int ss = line.IndexOf("https");
                                 int se = line.IndexOf(".jpg");
                                 wc.DownloadFile(line.Substring(ss, se - ss + 4), avatarFileName);
+                                break;
                             }
                         }
                     }
