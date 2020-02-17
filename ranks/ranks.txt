@@ -15,11 +15,11 @@ https://steamcommunity.com/profiles/76561197960306957
 `
 le tarteur
 14
-12
+13
 https://steamcommunity.com/profiles/76561197960856067
 `
 galpipo
-11
+12
 16
 https://steamcommunity.com/profiles/76561197996565738
 `
@@ -30,7 +30,7 @@ https://steamcommunity.com/profiles/76561197960354652
 `
 Inuit'TeX
 17
-11
+10
 https://steamcommunity.com/id/pierrecaline76
 `
 AlfTex
@@ -54,17 +54,17 @@ MiNeDiAmOnDs76
 https://steamcommunity.com/profiles/76561198993561651
 `
 MainRo'
-0
+11
 14
 https://steamcommunity.com/profiles/76561197960479086
 `
 Passe-Partout
-0
+15
 13
 https://steamcommunity.com/profiles/76561198084548328
 `
 MnR'
-0
+8
 13
 https://steamcommunity.com/profiles/76561198409217510
 `
@@ -79,7 +79,7 @@ MnRRRRRRRRRRRRRR
 https://steamcommunity.com/profiles/76561199008260606
 `
 Los Van Sen
-4
+7
 13
 https://steamcommunity.com/profiles/76561198049684581
 `
@@ -95,7 +95,7 @@ https://steamcommunity.com/profiles/76561198965888203
 `
 NolAkame
 15
-14
+13
 https://steamcommunity.com/id/ThomasHeroOfTime
 `
 UniBran
@@ -249,7 +249,7 @@ https://steamcommunity.com/profiles/76561198993355145
 https://steamcommunity.com/profiles/76561197992898060
 `
 bogoss2012
-0
-5
+11
+6
 https://steamcommunity.com/profiles/76561198109619241
 `
