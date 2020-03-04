@@ -32,17 +32,17 @@
             this.ReplaceConfig = new System.Windows.Forms.CheckBox();
             this.UseConsole = new System.Windows.Forms.CheckBox();
             this.InstallDummyPlugin = new System.Windows.Forms.CheckBox();
-            this.Launch = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.sdsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uninstallToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deuxToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uninstallToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.refreshToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.installToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -80,16 +80,6 @@
             this.InstallDummyPlugin.Text = "InstallDummyPlugin";
             this.InstallDummyPlugin.UseVisualStyleBackColor = true;
             // 
-            // Launch
-            // 
-            this.Launch.Location = new System.Drawing.Point(317, 3);
-            this.Launch.Name = "Launch";
-            this.Launch.Size = new System.Drawing.Size(75, 23);
-            this.Launch.TabIndex = 3;
-            this.Launch.Text = "Launch";
-            this.Launch.UseVisualStyleBackColor = true;
-            this.Launch.Click += new System.EventHandler(this.Launch_Click);
-            // 
             // listBox1
             // 
             this.listBox1.ContextMenuStrip = this.contextMenuStrip1;
@@ -100,6 +90,7 @@
             this.listBox1.Size = new System.Drawing.Size(410, 76);
             this.listBox1.TabIndex = 4;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
+            this.listBox1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseDoubleClick);
             this.listBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseDown);
             // 
             // contextMenuStrip1
@@ -107,16 +98,17 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sdsToolStripMenuItem,
             this.deuxToolStripMenuItem,
-            this.refreshToolStripMenuItem});
+            this.refreshToolStripMenuItem,
+            this.installToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 92);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 114);
             // 
             // sdsToolStripMenuItem
             // 
             this.sdsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.uninstallToolStripMenuItem});
             this.sdsToolStripMenuItem.Name = "sdsToolStripMenuItem";
-            this.sdsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.sdsToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.sdsToolStripMenuItem.Text = "ScePro";
             this.sdsToolStripMenuItem.Visible = false;
             // 
@@ -132,7 +124,7 @@
             this.deuxToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.uninstallToolStripMenuItem1});
             this.deuxToolStripMenuItem.Name = "deuxToolStripMenuItem";
-            this.deuxToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.deuxToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
             this.deuxToolStripMenuItem.Text = "Plugin";
             this.deuxToolStripMenuItem.Visible = false;
             // 
@@ -142,6 +134,13 @@
             this.uninstallToolStripMenuItem1.Size = new System.Drawing.Size(120, 22);
             this.uninstallToolStripMenuItem1.Text = "Uninstall";
             this.uninstallToolStripMenuItem1.Click += new System.EventHandler(this.uninstallToolStripMenuItem1_Click);
+            // 
+            // refreshToolStripMenuItem
+            // 
+            this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
+            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(113, 22);
+            this.refreshToolStripMenuItem.Text = "Refresh";
+            this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
             // panel1
             // 
@@ -157,7 +156,6 @@
             this.flowLayoutPanel1.Controls.Add(this.UseConsole);
             this.flowLayoutPanel1.Controls.Add(this.ReplaceConfig);
             this.flowLayoutPanel1.Controls.Add(this.InstallDummyPlugin);
-            this.flowLayoutPanel1.Controls.Add(this.Launch);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -173,12 +171,11 @@
             this.panel2.Size = new System.Drawing.Size(410, 76);
             this.panel2.TabIndex = 6;
             // 
-            // refreshToolStripMenuItem
+            // installToolStripMenuItem
             // 
-            this.refreshToolStripMenuItem.Name = "refreshToolStripMenuItem";
-            this.refreshToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.refreshToolStripMenuItem.Text = "Refresh";
-            this.refreshToolStripMenuItem.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
+            this.installToolStripMenuItem.Name = "installToolStripMenuItem";
+            this.installToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.installToolStripMenuItem.Text = "Install";
             // 
             // Form1
             // 
@@ -205,7 +202,6 @@
         private System.Windows.Forms.CheckBox ReplaceConfig;
         private System.Windows.Forms.CheckBox UseConsole;
         private System.Windows.Forms.CheckBox InstallDummyPlugin;
-        private System.Windows.Forms.Button Launch;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
@@ -216,6 +212,7 @@
         private System.Windows.Forms.ToolStripMenuItem uninstallToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem uninstallToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem refreshToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem installToolStripMenuItem;
     }
 }
 

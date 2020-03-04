@@ -51,9 +51,54 @@ namespace SceSelector
             this.UseConsole.Checked = Properties.Settings.Default.UseConsole;
             this.ReplaceConfig.Checked = Properties.Settings.Default.ReplaceConfig;
             this.InstallDummyPlugin.Checked = Properties.Settings.Default.InstallDummyPlugin;
-            this.ActiveControl = this.Launch;
 
             FillList();
+            FillInstaller();
+        }
+
+        private void FillInstaller()
+        {
+            foreach (var dir in Directory.GetDirectories(@"\\siradel.local\Atlas\PROJECTS\201206 InteractiveViewer3D\Product\Deliveries\Official Releases").Reverse().Take(5))
+            {
+                var item = installToolStripMenuItem.DropDownItems.Add(Path.GetFileName(dir));
+                item.Click += install_Click;
+            }
+
+            foreach (var dir in Directory.GetDirectories(@"\\siradel.local\Atlas\PROJECTS\201206 InteractiveViewer3D\Product\Deliveries\DevBranches"))
+            {
+                if (DateTime.Now.Subtract(Directory.GetLastWriteTime(dir)).Days < 30)
+                {
+                    var item = installToolStripMenuItem.DropDownItems.Add(Path.GetFileName(dir));
+                    item.Click += install_Click;
+                }
+            }
+        }
+
+        private void install_Click(object sender, EventArgs e)
+        {
+            string setup64Internal = string.Empty;
+            if (sender.ToString().StartsWith("SCE "))
+            {
+                setup64Internal = Path.Combine(@"\\siradel.local\Atlas\PROJECTS\201206 InteractiveViewer3D\Product\Deliveries\Official Releases", sender.ToString(), "setup64_internal.exe");
+            }
+            else
+            {
+                var root = Path.Combine(@"\\siradel.local\Atlas\PROJECTS\201206 InteractiveViewer3D\Product\Deliveries\DevBranches", sender.ToString());
+                var git = Directory.GetDirectories(root).LastOrDefault(d => !d.EndsWith("Build"));
+                if (git == null)
+                    git = "git-count-hash";
+
+                setup64Internal = Path.Combine(root, git, "Encryption", "setup64_internal.exe");
+            }
+            if (File.Exists(setup64Internal))
+            {
+                string installDir = Path.Combine(@"C:\Program Files\Siradel", "SmartCityExplorer_" + sender.ToString());
+                Process.Start(setup64Internal, string.Format(" {0} {1} {2}", "/VERYSILENT", "/NORUN", "/DIR=\"" + installDir  + "\""));
+            }
+            else
+            {
+                throw new FileNotFoundException(new FileNotFoundException().Message, setup64Internal);
+            }
         }
 
         private void FillList()
@@ -82,34 +127,6 @@ namespace SceSelector
             if (File.Exists(config.FilePath))
             {
                 File.Copy(config.FilePath, "user.config", true);
-            }
-        }
-
-        private void Launch_Click(object sender, EventArgs e)
-        {
-            if (this.listBox1.SelectedItem != null)
-            {
-                ProcessStartInfo psi = new ProcessStartInfo();
-                psi.WorkingDirectory = Path.GetDirectoryName(this.listBox1.SelectedItem.ToString());
-
-                if (ReplaceConfig.Checked)
-                    SetConfig();
-
-                if (InstallDummyPlugin.Checked)
-                    SetPlugin();
-
-                if (this.UseConsole.Checked)
-                {
-                    psi.FileName = "cmd.exe";
-                    psi.Arguments = "/C " + binName;
-                }
-                else
-                {
-                    psi.FileName = this.listBox1.SelectedItem.ToString();
-                }
-
-                if (this.listBox1.SelectedItem != null)
-                    Process.Start(psi);
             }
         }
 
@@ -233,5 +250,36 @@ namespace SceSelector
         {
             FillList();
         }
+
+        private void listBox1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            this.listBox1.SelectedIndex = this.listBox1.IndexFromPoint(e.X, e.Y);
+            if (this.listBox1.SelectedItem != null)
+            {
+                ProcessStartInfo psi = new ProcessStartInfo();
+                psi.WorkingDirectory = Path.GetDirectoryName(this.listBox1.SelectedItem.ToString());
+
+                if (ReplaceConfig.Checked)
+                    SetConfig();
+
+                if (InstallDummyPlugin.Checked)
+                    SetPlugin();
+
+                if (this.UseConsole.Checked)
+                {
+                    psi.FileName = "cmd.exe";
+                    psi.Arguments = "/C " + binName;
+                }
+                else
+                {
+                    psi.FileName = this.listBox1.SelectedItem.ToString();
+                }
+
+                if (this.listBox1.SelectedItem != null)
+                    Process.Start(psi);
+            }
+        }
+
+
     }
 }
