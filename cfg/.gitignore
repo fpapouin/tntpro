@@ -2,3 +2,5 @@
 *.*
 !.gitignore
 !0*
+!titles.txt
+!commandmenu.txt
