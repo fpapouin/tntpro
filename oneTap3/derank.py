@@ -7,14 +7,14 @@ import win32con
 
 ok_cowboy = True
 ok_jolly = False
-derank = False
+ok_derank = False
 
 while True:
     if ok_cowboy:
         if win32api.GetKeyState(0x01) & 0x80 == 128:  # mouse1
             if win32api.GetCursorPos() == (pyautogui.size().width/2, pyautogui.size().height/2):
-                #x = random.random()
-                #x = x / 1.0
+                x = random.random()
+                x = x / 3.3
                 pyautogui.keyDown('i')
                 #time.sleep(x)
                 pyautogui.keyUp('i')
