@@ -235,7 +235,7 @@ namespace ranks
                     r.ForeColor = Color.OrangeRed;
                 if (position <= 24)
                     r.ForeColor = Color.Green;
-                if (position <= 16)
+                if (position <= 12)
                     r.ForeColor = Color.RoyalBlue;
                 if (position <= 4)
                     r.ForeColor = Color.Yellow;
