@@ -1,16 +1,16 @@
 Tiger
 2
-4
+3
 https://steamcommunity.com/profiles/76561197960378169/
 `
 legaloupio
 17
-13
+12
 https://steamcommunity.com/profiles/76561197960533173
 `
 le_dahut
 14
-14
+13
 https://steamcommunity.com/profiles/76561197960306957
 `
 le tarteur
@@ -19,13 +19,13 @@ le tarteur
 https://steamcommunity.com/profiles/76561197960856067
 `
 galpipo
-14
+15
 16
 https://steamcommunity.com/profiles/76561197996565738
 `
 gerbille
-14
-13
+15
+12
 https://steamcommunity.com/profiles/76561197960354652
 `
 Inuit'TeX
@@ -65,22 +65,22 @@ https://steamcommunity.com/profiles/76561198084548328
 `
 MnR'
 8
-13
+14
 https://steamcommunity.com/profiles/76561198409217510
 `
 Cyka
 0
-13
+12
 https://steamcommunity.com/profiles/76561198986738740
 `
 MnRRRRRRRRRRRRRR
 0
-13
+12
 https://steamcommunity.com/profiles/76561199008260606
 `
 Los Van Sen
-9
-13
+10
+10
 https://steamcommunity.com/profiles/76561198049684581
 `
 Lars Van Sen
@@ -115,7 +115,7 @@ https://steamcommunity.com/profiles/76561198042469583
 `
 GAMBIE
 0
-4
+3
 https://steamcommunity.com/profiles/76561198897576691
 `
 LaBambi
@@ -124,8 +124,8 @@ LaBambi
 https://steamcommunity.com/profiles/76561198967078903
 `
 Feuillou
-16
-13
+17
+12
 https://steamcommunity.com/profiles/76561198878633876
 `
 Feuillouxx 
@@ -155,7 +155,7 @@ https://steamcommunity.com/profiles/76561198998035356
 `
 Zyhwo
 14
-11
+10
 https://steamcommunity.com/profiles/76561198216913655
 `
 PetitAbricotDesIles
@@ -185,7 +185,7 @@ https://steamcommunity.com/id/fantastictoad
 `
 Micka'z
 0
-13
+12
 https://steamcommunity.com/id/mkl35
 `
 Mkl35
@@ -200,7 +200,7 @@ https://steamcommunity.com/id/ishigo974
 `
 mxm'
 0
-13
+12
 https://steamcommunity.com/profiles/76561198008173372
 `
 lemerou
@@ -215,7 +215,7 @@ https://steamcommunity.com/id/tarteur
 `
 Frost
 0
-8
+9
 https://steamcommunity.com/id/raphaoul
 `
 Hisoka
@@ -255,12 +255,12 @@ https://steamcommunity.com/profiles/76561198109619241
 `
 legraloupio
 14
-11
+12
 https://steamcommunity.com/profiles/76561199027858579
 `
 MnR6
 0
-11
+12
 https://steamcommunity.com/profiles/76561199027927231
 `
 mxm''
