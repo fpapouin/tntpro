@@ -1,5 +1,5 @@
 Tiger
-2
+1
 3
 https://steamcommunity.com/profiles/76561197960378169/
 `
@@ -80,7 +80,7 @@ https://steamcommunity.com/profiles/76561199008260606
 `
 Los Van Sen
 10
-10
+11
 https://steamcommunity.com/profiles/76561198049684581
 `
 Lars Van Sen
@@ -200,7 +200,7 @@ https://steamcommunity.com/id/ishigo974
 `
 mxm'
 0
-12
+13
 https://steamcommunity.com/profiles/76561198008173372
 `
 lemerou
@@ -214,8 +214,8 @@ CasseGrain
 https://steamcommunity.com/id/tarteur
 `
 Frost
-0
-9
+12
+10
 https://steamcommunity.com/id/raphaoul
 `
 Hisoka
@@ -269,12 +269,22 @@ mxm''
 https://steamcommunity.com/profiles/76561199028022118
 `
 Pascal
-0
 12
+11
 https://steamcommunity.com/profiles/76561198086200818/
 `
 Boubourse
 //0
 //8
 //https://steamcommunity.com/profiles/76561199032420039
+`
+Bab
+1
+12
+https://steamcommunity.com/profiles/76561198029004420/
+`
+Potrick
+0
+13
+https://steamcommunity.com/profiles/76561198024146435/
 `
