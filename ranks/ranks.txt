@@ -1,5 +1,5 @@
 Tiger
-1
+2
 4
 https://steamcommunity.com/profiles/76561197960378169/
 `
@@ -89,12 +89,12 @@ Lars Van Sen
 https://steamcommunity.com/profiles/76561198900437043
 `
 Lars
-0
+6
 3
 https://steamcommunity.com/profiles/76561198965888203
 `
 NolAkame
-15
+16
 13
 https://steamcommunity.com/id/ThomasHeroOfTime
 `
@@ -145,7 +145,7 @@ https://steamcommunity.com/id/wyhzo
 `
 Wyhzo2
 11
-14
+13
 https://steamcommunity.com/profiles/76561197975968881
 `
 Wyz.
@@ -166,12 +166,12 @@ https://steamcommunity.com/profiles/76561198996728434
 Puppy Boy
 //0
 //7
-//https://steamcommunity.com/id/stevenlr
+https://steamcommunity.com/id/stevenlr
 `
 Suteben
 //0
 //0
-//https://steamcommunity.com/profiles/76561199003926696
+https://steamcommunity.com/profiles/76561199003926696
 `
 Shteuf
 16
@@ -231,12 +231,12 @@ https://steamcommunity.com/id/LapOar
 RedOusHi
 //0
 //0
-//https://steamcommunity.com/profiles/76561198001850327
+https://steamcommunity.com/profiles/76561198001850327
 `
 TheKiF
 //0
 //0
-//https://steamcommunity.com/profiles/76561197992444582
+https://steamcommunity.com/profiles/76561197992444582
 `
 Kitsuney
 0
@@ -246,7 +246,7 @@ https://steamcommunity.com/profiles/76561198993355145
 ...C.E.M...coco
 //0
 //6
-//https://steamcommunity.com/profiles/76561197992898060
+https://steamcommunity.com/profiles/76561197992898060
 `
 bogoss2012
 12
@@ -266,7 +266,7 @@ https://steamcommunity.com/profiles/76561199027927231
 mxm''
 //0
 //0
-//https://steamcommunity.com/profiles/76561199028022118
+https://steamcommunity.com/profiles/76561199028022118
 `
 Pascal
 12
@@ -276,14 +276,14 @@ https://steamcommunity.com/profiles/76561198086200818/
 Boubourse
 //0
 //9
-//https://steamcommunity.com/profiles/76561199032420039
+https://steamcommunity.com/profiles/76561199032420039
 `
 sodoreskator
-2
-13
+3
+12
 https://steamcommunity.com/profiles/76561198029004420/
 `
-Potrick
+Wasted
 0
 13
 https://steamcommunity.com/profiles/76561198024146435/
@@ -291,7 +291,7 @@ https://steamcommunity.com/profiles/76561198024146435/
 Zorax
 //0
 //7
-//https://steamcommunity.com/profiles/76561199041978518/
+https://steamcommunity.com/profiles/76561199041978518/
 `
 Akeen
 16
