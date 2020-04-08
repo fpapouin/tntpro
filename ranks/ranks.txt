@@ -1,6 +1,6 @@
 Tiger
 1
-3
+4
 https://steamcommunity.com/profiles/76561197960378169/
 `
 legaloupio
@@ -10,7 +10,7 @@ https://steamcommunity.com/profiles/76561197960533173
 `
 le_dahut
 14
-13
+12
 https://steamcommunity.com/profiles/76561197960306957
 `
 le tarteur
@@ -24,7 +24,7 @@ galpipo
 https://steamcommunity.com/profiles/76561197996565738
 `
 gerbille
-15
+16
 12
 https://steamcommunity.com/profiles/76561197960354652
 `
@@ -85,7 +85,7 @@ https://steamcommunity.com/profiles/76561198049684581
 `
 Lars Van Sen
 15
-13
+14
 https://steamcommunity.com/profiles/76561198900437043
 `
 Lars
@@ -144,8 +144,8 @@ WyHzO
 https://steamcommunity.com/id/wyhzo
 `
 Wyhzo2
-0
-13
+11
+14
 https://steamcommunity.com/profiles/76561197975968881
 `
 Wyz.
@@ -225,7 +225,7 @@ https://steamcommunity.com/id/Hisokaka
 `
 Willux
 0
-11
+12
 https://steamcommunity.com/id/LapOar
 `
 RedOusHi
@@ -264,9 +264,9 @@ MnR6
 https://steamcommunity.com/profiles/76561199027927231
 `
 mxm''
-0
-0
-https://steamcommunity.com/profiles/76561199028022118
+//0
+//0
+//https://steamcommunity.com/profiles/76561199028022118
 `
 Pascal
 12
@@ -275,16 +275,26 @@ https://steamcommunity.com/profiles/76561198086200818/
 `
 Boubourse
 //0
-//8
+//9
 //https://steamcommunity.com/profiles/76561199032420039
 `
-Bab
-1
-12
+sodoreskator
+2
+13
 https://steamcommunity.com/profiles/76561198029004420/
 `
 Potrick
 0
 13
 https://steamcommunity.com/profiles/76561198024146435/
+`
+Zorax
+//0
+//7
+//https://steamcommunity.com/profiles/76561199041978518/
+`
+Akeen
+16
+12
+https://steamcommunity.com/id/lushenfr/
 `
