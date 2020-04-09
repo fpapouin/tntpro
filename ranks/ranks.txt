@@ -260,7 +260,7 @@ https://steamcommunity.com/profiles/76561199027858579
 `
 MnR6
 0
-12
+13
 https://steamcommunity.com/profiles/76561199027927231
 `
 mxm''
@@ -290,7 +290,7 @@ https://steamcommunity.com/profiles/76561198024146435/
 `
 Zorax
 //0
-//7
+//10
 https://steamcommunity.com/profiles/76561199041978518/
 `
 Akeen
