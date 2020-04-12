@@ -1,422 +1,429 @@
 [
     {
         "name": "Tiger",
-        "url": "https://steamcommunity.com/profiles/76561197960378169",
+        "id": "76561197960378169",
         "visible": true,
-        "wingman": 1,
+        "wingman": 2,
         "compet": 4
     },
     {
         "name": "legaloupio",
-        "url": "https://steamcommunity.com/profiles/76561197960533173",
+        "id": "76561197960533173",
         "visible": true,
         "wingman": 17,
         "compet": 12
     },
     {
         "name": "le_dahut",
-        "url": "https://steamcommunity.com/profiles/76561197960306957",
+        "id": "76561197960306957",
         "visible": true,
         "wingman": 14,
         "compet": 12
     },
     {
         "name": "le tarteur",
-        "url": "https://steamcommunity.com/profiles/76561197960856067",
+        "id": "76561197960856067",
         "visible": true,
         "wingman": 14,
         "compet": 12
     },
     {
         "name": "galpipo",
-        "url": "https://steamcommunity.com/profiles/76561197996565738",
+        "id": "76561197996565738",
         "visible": true,
         "wingman": 15,
         "compet": 16
     },
     {
         "name": "gerbille",
-        "url": "https://steamcommunity.com/profiles/76561197960354652",
+        "id": "76561197960354652",
         "visible": true,
         "wingman": 16,
         "compet": 12
     },
     {
-        "name": "Tex",
-        "url": "https://steamcommunity.com/id/pierrecaline76",
+        "name": "Inuit'TeX",
+        "id": "pierrecaline76",
         "visible": true,
         "wingman": 17,
         "compet": 11
     },
     {
-        "name": "PaSt3x",
-        "url": "https://steamcommunity.com/id/SPINOZAUR76",
+        "name": "AlfTex",
+        "id": "SPINOZAUR76",
         "visible": true,
         "wingman": 14,
         "compet": 14
     },
     {
-        "name": "Tex 3",
-        "url": "https://steamcommunity.com/profiles/76561198985558928",
+        "name": "Tex le petit yoda",
+        "id": "76561198985558928",
         "visible": true,
         "wingman": 14,
         "compet": 6
     },
     {
         "name": "smurf",
-        "url": "https://steamcommunity.com/profiles/76561198996797608",
+        "id": "76561198996797608",
         "visible": true,
         "wingman": 0,
         "compet": 6
     },
     {
         "name": "MiNeDiAmOnDs76",
-        "url": "https://steamcommunity.com/profiles/76561198993561651",
+        "id": "76561198993561651",
         "visible": true,
         "wingman": 0,
         "compet": 0
     },
     {
         "name": "MainRo'",
-        "url": "https://steamcommunity.com/profiles/76561197960479086",
+        "id": "76561197960479086",
         "visible": true,
         "wingman": 11,
         "compet": 14
     },
     {
         "name": "Passe-Partout",
-        "url": "https://steamcommunity.com/profiles/76561198084548328",
+        "id": "76561198084548328",
         "visible": true,
         "wingman": 15,
         "compet": 14
     },
     {
         "name": "MnR'",
-        "url": "https://steamcommunity.com/profiles/76561198409217510",
+        "id": "76561198409217510",
         "visible": true,
         "wingman": 8,
         "compet": 14
     },
     {
         "name": "Cyka",
-        "url": "https://steamcommunity.com/profiles/76561198986738740",
+        "id": "76561198986738740",
         "visible": true,
         "wingman": 0,
-        "compet": 12
+        "compet": 13
     },
     {
-        "name": "SERVIETSKY",
-        "url": "https://steamcommunity.com/profiles/76561199008260606",
+        "name": "MnRRRRRRRRRRRRRR",
+        "id": "76561199008260606",
         "visible": true,
         "wingman": 0,
-        "compet": 12
+        "compet": 11
     },
     {
         "name": "Los Van Sen",
-        "url": "https://steamcommunity.com/profiles/76561198049684581",
+        "id": "76561198049684581",
         "visible": true,
         "wingman": 10,
         "compet": 11
     },
     {
         "name": "Lars Van Sen",
-        "url": "https://steamcommunity.com/profiles/76561198900437043",
+        "id": "76561198900437043",
         "visible": true,
         "wingman": 15,
         "compet": 14
     },
     {
         "name": "Lars",
-        "url": "https://steamcommunity.com/profiles/76561198965888203",
+        "id": "76561198965888203",
         "visible": true,
-        "wingman": 0,
+        "wingman": 6,
         "compet": 3
     },
     {
         "name": "NolAkame",
-        "url": "https://steamcommunity.com/id/ThomasHeroOfTime",
+        "id": "ThomasHeroOfTime",
         "visible": true,
-        "wingman": 15,
+        "wingman": 16,
         "compet": 13
     },
     {
         "name": "UniBran",
-        "url": "https://steamcommunity.com/profiles/76561198115345960",
+        "id": "76561198115345960",
         "visible": true,
         "wingman": 0,
         "compet": 13
     },
     {
         "name": "Obi Wan Can Blow Me",
-        "url": "https://steamcommunity.com/profiles/76561198013889532",
+        "id": "76561198013889532",
         "visible": true,
         "wingman": 0,
         "compet": 6
     },
     {
         "name": "ElGambinos",
-        "url": "https://steamcommunity.com/profiles/76561198042469583",
+        "id": "76561198042469583",
         "visible": true,
         "wingman": 14,
         "compet": 13
     },
     {
         "name": "GAMBIE",
-        "url": "https://steamcommunity.com/profiles/76561198897576691",
+        "id": "76561198897576691",
         "visible": true,
         "wingman": 0,
         "compet": 3
     },
     {
         "name": "LaBambi",
-        "url": "https://steamcommunity.com/profiles/76561198967078903",
+        "id": "76561198967078903",
         "visible": true,
         "wingman": 0,
         "compet": 0
     },
     {
         "name": "Feuillou",
-        "url": "https://steamcommunity.com/profiles/76561198878633876",
+        "id": "76561198878633876",
         "visible": true,
         "wingman": 17,
-        "compet": 12
+        "compet": 11
     },
     {
-        "name": "Feuillouxx",
-        "url": "https://steamcommunity.com/profiles/76561198991068514",
+        "name": "Feuillouxx ",
+        "id": "76561198991068514",
         "visible": true,
         "wingman": 12,
-        "compet": 12
+        "compet": 13
     },
     {
         "name": "feuilloufloux",
-        "url": "https://steamcommunity.com/profiles/76561199010821754",
+        "id": "76561199010821754",
         "visible": true,
         "wingman": 0,
         "compet": 10
     },
     {
         "name": "WyHzO",
-        "url": "https://steamcommunity.com/id/wyhzo",
+        "id": "wyhzo",
         "visible": true,
         "wingman": 0,
         "compet": 16
     },
     {
-        "name": "Wyhzo",
-        "url": "https://steamcommunity.com/profiles/76561197975968881",
+        "name": "Wyhzo2",
+        "id": "76561197975968881",
         "visible": true,
         "wingman": 11,
         "compet": 13
     },
     {
         "name": "Wyz.",
-        "url": "https://steamcommunity.com/profiles/76561198998035356",
+        "id": "76561198998035356",
         "visible": true,
         "wingman": 0,
         "compet": 0
     },
     {
         "name": "Zyhwo",
-        "url": "https://steamcommunity.com/profiles/76561198216913655",
+        "id": "76561198216913655",
         "visible": true,
         "wingman": 14,
         "compet": 10
     },
     {
         "name": "PetitAbricotDesIles",
-        "url": "https://steamcommunity.com/profiles/76561198996728434",
+        "id": "76561198996728434",
         "visible": true,
         "wingman": 0,
         "compet": 0
     },
     {
         "name": "Puppy Boy",
-        "url": "https://steamcommunity.com/id/stevenlr",
+        "id": "stevenlr",
         "visible": false,
         "wingman": 0,
         "compet": 7
     },
     {
         "name": "Suteben",
-        "url": "https://steamcommunity.com/profiles/76561199003926696",
+        "id": "76561199003926696",
         "visible": false,
         "wingman": 0,
         "compet": 0
     },
     {
         "name": "Shteuf",
-        "url": "https://steamcommunity.com/id/shteuf",
+        "id": "shteuf",
         "visible": true,
         "wingman": 16,
         "compet": 11
     },
     {
         "name": "Fantastic Toad",
-        "url": "https://steamcommunity.com/id/fantastictoad",
+        "id": "fantastictoad",
         "visible": true,
         "wingman": 0,
         "compet": 6
     },
     {
         "name": "Micka'z",
-        "url": "https://steamcommunity.com/id/mkl35",
+        "id": "mkl35",
         "visible": true,
         "wingman": 0,
         "compet": 12
     },
     {
         "name": "Mkl35",
-        "url": "https://steamcommunity.com/profiles/76561198987091135",
+        "id": "76561198987091135",
         "visible": true,
         "wingman": 0,
         "compet": 0
     },
     {
         "name": "mxm",
-        "url": "https://steamcommunity.com/id/ishigo974",
+        "id": "ishigo974",
         "visible": true,
         "wingman": 0,
         "compet": 16
     },
     {
         "name": "mxm'",
-        "url": "https://steamcommunity.com/profiles/76561198008173372",
+        "id": "76561198008173372",
         "visible": true,
         "wingman": 0,
         "compet": 13
     },
     {
-        "name": "\ud83e\udd47\u2014 lemerou \u2014 \ud83d\ude49",
-        "url": "https://steamcommunity.com/profiles/76561197979388335",
-        "visible": true,
+        "name": "lemerou",
+        "id": "76561197979388335",
+        "visible": false,
         "wingman": 0,
         "compet": 3
     },
     {
         "name": "CasseGrain",
-        "url": "https://steamcommunity.com/id/tarteur",
+        "id": "tarteur",
         "visible": true,
         "wingman": 0,
         "compet": 8
     },
     {
         "name": "Frost",
-        "url": "https://steamcommunity.com/id/raphaoul",
+        "id": "raphaoul",
         "visible": true,
         "wingman": 12,
         "compet": 10
     },
     {
         "name": "Hisoka",
-        "url": "https://steamcommunity.com/id/Hisokaka",
+        "id": "Hisokaka",
         "visible": true,
         "wingman": 15,
         "compet": 10
     },
     {
-        "name": "WiluX",
-        "url": "https://steamcommunity.com/id/LapOar",
+        "name": "Willux",
+        "id": "LapOar",
         "visible": true,
         "wingman": 0,
         "compet": 12
     },
     {
         "name": "RedOusHi",
-        "url": "https://steamcommunity.com/profiles/76561198001850327",
+        "id": "76561198001850327",
         "visible": false,
         "wingman": 0,
         "compet": 0
     },
     {
         "name": "TheKiF",
-        "url": "https://steamcommunity.com/profiles/76561197992444582",
+        "id": "76561197992444582",
         "visible": false,
         "wingman": 0,
         "compet": 0
     },
     {
         "name": "Kitsuney",
-        "url": "https://steamcommunity.com/profiles/76561198993355145",
+        "id": "76561198993355145",
         "visible": true,
         "wingman": 0,
         "compet": 8
     },
     {
-        "name": "...::C.E.M::...coco",
-        "url": "https://steamcommunity.com/profiles/76561197992898060",
+        "name": "...C.E.M...coco",
+        "id": "76561197992898060",
         "visible": false,
         "wingman": 0,
         "compet": 6
     },
     {
         "name": "bogoss2012",
-        "url": "https://steamcommunity.com/profiles/76561198109619241",
+        "id": "76561198109619241",
         "visible": true,
         "wingman": 12,
         "compet": 7
     },
     {
         "name": "legraloupio",
-        "url": "https://steamcommunity.com/profiles/76561199027858579",
+        "id": "76561199027858579",
         "visible": true,
         "wingman": 14,
         "compet": 12
     },
     {
         "name": "MnR6",
-        "url": "https://steamcommunity.com/profiles/76561199027927231",
+        "id": "76561199027927231",
         "visible": true,
         "wingman": 0,
-        "compet": 12
+        "compet": 13
     },
     {
         "name": "mxm''",
-        "url": "https://steamcommunity.com/profiles/76561199028022118",
+        "id": "76561199028022118",
         "visible": false,
         "wingman": 0,
         "compet": 0
     },
     {
-        "name": "PsK^D.EaGLe # 7___Pascal_la_dal",
-        "url": "https://steamcommunity.com/profiles/76561198086200818",
+        "name": "Pascal",
+        "id": "76561198086200818",
         "visible": true,
         "wingman": 12,
         "compet": 11
     },
     {
         "name": "Boubourse",
-        "url": "https://steamcommunity.com/profiles/76561199032420039",
+        "id": "76561199032420039",
         "visible": false,
         "wingman": 0,
         "compet": 9
     },
     {
-        "name": "juifin",
-        "url": "https://steamcommunity.com/profiles/76561198029004420",
+        "name": "sodoreskator",
+        "id": "76561198029004420",
         "visible": true,
-        "wingman": 2,
+        "wingman": 5,
         "compet": 12
     },
     {
-        "name": "Enfant insolent",
-        "url": "https://steamcommunity.com/profiles/76561198024146435",
+        "name": "Wasted",
+        "id": "76561198024146435",
         "visible": true,
-        "wingman": 0,
+        "wingman": 2,
         "compet": 13
     },
     {
-        "name": "zorax",
-        "url": "https://steamcommunity.com/profiles/76561199041978518",
+        "name": "Zorax",
+        "id": "76561199041978518",
         "visible": false,
         "wingman": 0,
-        "compet": 7
+        "compet": 9
     },
     {
         "name": "Akeen",
-        "url": "https://steamcommunity.com/id/lushenfr",
+        "id": "lushenfr",
         "visible": true,
         "wingman": 16,
         "compet": 12
+    },
+    {
+        "name": "Eagle",
+        "id": "yatangak",
+        "visible": true,
+        "wingman": 14,
+        "compet": 13
     }
 ]
