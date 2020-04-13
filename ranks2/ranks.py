@@ -28,6 +28,9 @@ class Pohhop():
             self.visible = pdata['visible']
             self.wingman = pdata['wingman']
             self.compet = pdata['compet']
+            self.__avatar__ = None
+            self.__wingman__ = None
+            self.__compet__ = None
 
     def to_json(self):
         return {
@@ -71,10 +74,31 @@ class Pohhop():
         os.startfile(self.get_url())
 
     def compet_click(self, event):
-        pass
+        if event.num == 1:
+            if self.compet != 18:
+                self.compet+=1
+        else:
+            if self.compet != 0:
+                self.compet-=1
+        c = event.widget
+        from PIL import ImageTk, Image
+        pil_image = Image.open(self.get_compet()).resize((150, 60), Image.ANTIALIAS)
+        self.__compet__ = ImageTk.PhotoImage(pil_image)
+        c.create_image(0, 0, anchor=NW, image=self.__compet__)
+
 
     def wingman_click(self, event):
-        pass
+        if event.num == 1:
+            if self.wingman != 18:
+                self.wingman+=1
+        else:
+            if self.wingman != 0:
+                self.wingman-=1
+        c = event.widget
+        from PIL import ImageTk, Image
+        pil_image = Image.open(self.get_wingman()).resize((150, 60), Image.ANTIALIAS)
+        self.__wingman__ = ImageTk.PhotoImage(pil_image)
+        c.create_image(0, 0, anchor=NW, image=self.__wingman__)
 
 
 def parse_txt_to_json():
@@ -112,7 +136,6 @@ def update_avatar_and_name():
 
 
 class Ihm():
-    images = []
 
     def __init__(self):
         root = Tk()
@@ -180,24 +203,24 @@ class Ihm():
     def add_avatar(self, root, player):
         from PIL import ImageTk, Image
         pil_image = Image.open(player.get_avatar()).resize((120, 120), Image.ANTIALIAS)
-        self.images.append(ImageTk.PhotoImage(pil_image))
-        b = Button(root, image=self.images[-1], relief=FLAT, background='Black')
+        player.__avatar__ = ImageTk.PhotoImage(pil_image)
+        b = Button(root, image=player.__avatar__, relief=FLAT, background='Black')
         b.grid(column=1, rowspan=2, row=0)
         b['command'] = player.avatar_click
 
     def add_rank(self, root, player):
         from PIL import ImageTk, Image
         pil_image = Image.open(player.get_compet()).resize((150, 60), Image.ANTIALIAS)
-        self.images.append(ImageTk.PhotoImage(pil_image))
+        player.__compet__ = ImageTk.PhotoImage(pil_image)
         c = Canvas(root, width=150, height=60, background='Black', borderwidth=0, highlightthickness=0, relief='ridge')
-        c.create_image(0, 0, anchor=NW, image=self.images[-1])
+        c.create_image(0, 0, anchor=NW, image=player.__compet__)
         c.grid(column=2, row=0)
         c.bind('<Button-1>', player.compet_click)
         c.bind('<Button-3>', player.compet_click)
         pil_image = Image.open(player.get_wingman()).resize((150, 60), Image.ANTIALIAS)
-        self.images.append(ImageTk.PhotoImage(pil_image))
+        player.__wingman__ = ImageTk.PhotoImage(pil_image)
         c = Canvas(root, width=150, height=60, background='Black', borderwidth=0, highlightthickness=0, relief='ridge')
-        c.create_image(0, 0, anchor=NW, image=self.images[-1])
+        c.create_image(0, 0, anchor=NW, image=player.__wingman__)
         c.grid(column=2, row=1)
         c.bind('<Button-1>', player.wingman_click)
         c.bind('<Button-3>', player.wingman_click)
