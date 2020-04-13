@@ -1,6 +1,7 @@
 import os
 import json
 import requests
+import sys
 from tkinter import Tk, Frame, Button, FLAT, Canvas, NW
 
 
@@ -261,34 +262,42 @@ class Ihm():
 
     def export(self):
         import win32gui
-        from PIL import ImageGrab
+        from PIL import ImageGrab, Image
         handle = self.root.winfo_id()
         rect = win32gui.GetWindowRect(handle)
         self.previous()
         self.root.update()
-        img = ImageGrab.grab(rect)
-        img.save('ranks1.png', 'png')
+        ranks1 = ImageGrab.grab(rect)
         self.next()
         self.root.update()
-        img = ImageGrab.grab(rect)
-        img.save('ranks2.png', 'png')
+        ranks2 = ImageGrab.grab(rect)
         for player in self.accounts:
             update_ranks(player)
         self.root.destroy()
+        new_img = Image.new('RGB', (1920, 1630))
+        new_img.paste(ranks1)
+        new_img.paste(ranks2, (0, 950))
+        new_img.save('ranks.png', 'png')
+
+
+def upload(user, password):
+    import ftplib
+    session = ftplib.FTP('ftpperso.free.fr', user, password)
+    with open('ranks.png', 'rb') as binary_file:
+        session.storbinary('STOR ranks.png', binary_file)
+    session.quit()
 
 
 def main():
     # parse_txt_to_json()
-
     # update_avatar_and_name()
-
     # add_account('76561198875150680')
-
     # p = Pohhop()
     # p.id = '76561197960378169'
     # update_ranks(p)
-
     Ihm()
+    if len(sys.argv) == 3:
+        upload(sys.argv[1], sys.argv[2])
 
 
 if __name__ == '__main__':
