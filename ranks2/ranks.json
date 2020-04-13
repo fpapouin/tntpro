@@ -4,7 +4,7 @@
         "id": "76561197960378169",
         "visible": true,
         "wingman": 2,
-        "compet": 4
+        "compet": 3
     },
     {
         "name": "legaloupio",
@@ -18,7 +18,7 @@
         "id": "76561197960306957",
         "visible": true,
         "wingman": 14,
-        "compet": 12
+        "compet": 11
     },
     {
         "name": "le tarteur",
@@ -172,14 +172,14 @@
         "id": "76561198967078903",
         "visible": true,
         "wingman": 0,
-        "compet": 0
+        "compet": 4
     },
     {
         "name": "Feuillou",
         "id": "76561198878633876",
         "visible": true,
         "wingman": 17,
-        "compet": 11
+        "compet": 12
     },
     {
         "name": "Feuillouxx ",
@@ -233,14 +233,14 @@
     {
         "name": "Puppy Boy",
         "id": "stevenlr",
-        "visible": false,
+        "visible": true,
         "wingman": 0,
         "compet": 7
     },
     {
         "name": "Suteben",
         "id": "76561199003926696",
-        "visible": false,
+        "visible": true,
         "wingman": 0,
         "compet": 0
     },
@@ -289,7 +289,7 @@
     {
         "name": "lemerou",
         "id": "76561197979388335",
-        "visible": false,
+        "visible": true,
         "wingman": 0,
         "compet": 3
     },
@@ -305,7 +305,7 @@
         "id": "raphaoul",
         "visible": true,
         "wingman": 12,
-        "compet": 10
+        "compet": 9
     },
     {
         "name": "Hisoka",
@@ -324,14 +324,14 @@
     {
         "name": "RedOusHi",
         "id": "76561198001850327",
-        "visible": false,
+        "visible": true,
         "wingman": 0,
         "compet": 0
     },
     {
         "name": "TheKiF",
         "id": "76561197992444582",
-        "visible": false,
+        "visible": true,
         "wingman": 0,
         "compet": 0
     },
@@ -373,7 +373,7 @@
     {
         "name": "mxm''",
         "id": "76561199028022118",
-        "visible": false,
+        "visible": true,
         "wingman": 0,
         "compet": 0
     },
@@ -387,7 +387,7 @@
     {
         "name": "Boubourse",
         "id": "76561199032420039",
-        "visible": false,
+        "visible": true,
         "wingman": 0,
         "compet": 9
     },
@@ -408,7 +408,7 @@
     {
         "name": "Zorax",
         "id": "76561199041978518",
-        "visible": false,
+        "visible": true,
         "wingman": 0,
         "compet": 9
     },

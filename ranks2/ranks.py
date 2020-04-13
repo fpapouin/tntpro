@@ -76,24 +76,23 @@ class Pohhop():
     def compet_click(self, event):
         if event.num == 1:
             if self.compet != 18:
-                self.compet+=1
+                self.compet += 1
         else:
             if self.compet != 0:
-                self.compet-=1
+                self.compet -= 1
         c = event.widget
         from PIL import ImageTk, Image
         pil_image = Image.open(self.get_compet()).resize((150, 60), Image.ANTIALIAS)
         self.__compet__ = ImageTk.PhotoImage(pil_image)
         c.create_image(0, 0, anchor=NW, image=self.__compet__)
 
-
     def wingman_click(self, event):
         if event.num == 1:
             if self.wingman != 18:
-                self.wingman+=1
+                self.wingman += 1
         else:
             if self.wingman != 0:
-                self.wingman-=1
+                self.wingman -= 1
         c = event.widget
         from PIL import ImageTk, Image
         pil_image = Image.open(self.get_wingman()).resize((150, 60), Image.ANTIALIAS)
@@ -121,41 +120,70 @@ def parse_txt_to_json():
                 p.visible = False
             p.wingman = int(p.wingman)
             p.compet = int(p.compet)
+            p.download_avatar()
             data.append(p.to_json())
     write_data(data)
 
 
-def update_avatar_and_name():
-    #new_data = []
-    for pdata in read_data():
-        player = Pohhop(pdata)
-        player.download_avatar()
-        # player.update_name()
-    #    new_data.append(player.to_json())
-    # write_data(new_data)
+def add_account(id):
+    player = Pohhop()
+    player.id = id
+    player.download_avatar()
+    player.update_name()
+    data = read_data()
+    data.append(player.to_json())
+    write_data(data)
+
+
+def update_ranks(player):
+    data = read_data()
+    for pdata in data:
+        if pdata['id'] == player.id:
+            pdata['compet'] = player.compet
+            pdata['wingman'] = player.wingman
+    write_data(data)
 
 
 class Ihm():
 
     def __init__(self):
-        root = Tk()
-        root.title('Ranks')
-        root['background'] = '#000000'
-        root.state('zoomed')
-        self.load(root)
-        root.mainloop()
+        self.root = Tk()
+        self.root.title('Ranks')
+        self.root['background'] = '#000000'
+        self.root.state('zoomed')
+        self.load()
+        self.root.protocol("WM_DELETE_WINDOW", self.export)
+        self.root.mainloop()
 
-    def load(self, root):
-        accounts = []
+    def next(self):
+        i = 1
+        for key in self.root.children:
+            if i <= 7*5:
+                self.root.children[key].grid_remove()
+            else:
+                self.root.children[key].grid()
+            i += 1
+
+    def previous(self):
+        i = 1
+        for key in self.root.children:
+            if i <= 7*5:
+                self.root.children[key].grid()
+            else:
+                self.root.children[key].grid_remove()
+            i += 1
+
+    def load(self):
+        self.accounts = []
         for pdata in read_data():
-            accounts.append(Pohhop(pdata))
-        accounts.sort(key=lambda x: (x.compet, x.wingman), reverse=True)
+            self.accounts.append(Pohhop(pdata))
+        self.accounts.sort(key=lambda x: (x.compet, x.wingman), reverse=True)
         x = 0
         y = 0
         position = 0
         delta = 0
-        last_account = accounts[-1]
-        for player in accounts:
+        last_account = self.accounts[-1]
+        for player in self.accounts:
             if not player.visible:
                 continue
             if player.compet != last_account.compet:
@@ -169,20 +197,19 @@ class Ihm():
             else:
                 delta += 1
             last_account = player
-            if position <= 35:
-                pass
-                # continue
-            frame = Frame(root, background='Black')
+
+            frame = Frame(self.root, background='Black')
             self.add_position(frame, position)
             self.add_avatar(frame, player)
             self.add_rank(frame, player)
             frame.grid(column=x, row=y, padx=20, pady=5)
+            if y >= 7*2:
+                pass
+                frame.grid_remove()
             x += 1
             if x == 5:
                 x = 0
                 y += 2
-            if y == 14:
-                break
 
     def add_position(self, root, pos):
         import tkinter.font as font
@@ -198,7 +225,14 @@ class Ihm():
             foreColor = 'Yellow'
         b = Button(root, text=str(pos), relief=FLAT, font=myFont, background='Black', foreground=foreColor, width=2)
         b.grid(column=0, rowspan=2, row=0)
-        return b
+        b.bind('<Button-1>', self.position_click)
+        b.bind('<Button-3>', self.position_click)
+
+    def position_click(self, event):
+        if event.num == 1:
+            self.next()
+        else:
+            self.previous()
 
     def add_avatar(self, root, player):
         from PIL import ImageTk, Image
@@ -225,10 +259,35 @@ class Ihm():
         c.bind('<Button-1>', player.wingman_click)
         c.bind('<Button-3>', player.wingman_click)
 
+    def export(self):
+        import win32gui
+        from PIL import ImageGrab
+        handle = self.root.winfo_id()
+        rect = win32gui.GetWindowRect(handle)
+        self.previous()
+        self.root.update()
+        img = ImageGrab.grab(rect)
+        img.save('ranks1.png', 'png')
+        self.next()
+        self.root.update()
+        img = ImageGrab.grab(rect)
+        img.save('ranks2.png', 'png')
+        for player in self.accounts:
+            update_ranks(player)
+        self.root.destroy()
+
 
 def main():
     # parse_txt_to_json()
+
     # update_avatar_and_name()
+
+    # add_account('76561198875150680')
+
+    # p = Pohhop()
+    # p.id = '76561197960378169'
+    # update_ranks(p)
+
     Ihm()
 
 
