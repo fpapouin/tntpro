@@ -185,6 +185,7 @@ class Ihm():
         delta = 0
         last_account = self.accounts[-1]
         for player in self.accounts:
+            player.download_avatar()
             if not player.visible:
                 continue
             if player.compet != last_account.compet:
@@ -290,11 +291,8 @@ def upload(user, password):
 
 def main():
     # parse_txt_to_json()
-    # update_avatar_and_name()
-    # add_account('76561198875150680')
-    # p = Pohhop()
-    # p.id = '76561197960378169'
-    # update_ranks(p)
+    if len(sys.argv) == 2:
+        add_account(sys.argv[1])
     Ihm()
     if len(sys.argv) == 3:
         upload(sys.argv[1], sys.argv[2])
