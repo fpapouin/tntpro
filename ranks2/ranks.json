@@ -220,7 +220,7 @@
         "name": "Zyhwo",
         "id": "76561198216913655",
         "visible": true,
-        "wingman": 16,
+        "wingman": 15,
         "compet": 11
     },
     {
@@ -388,14 +388,14 @@
         "name": "Boubourse",
         "id": "76561199032420039",
         "visible": true,
-        "wingman": 12,
-        "compet": 8
+        "wingman": 13,
+        "compet": 9
     },
     {
         "name": "sodoreskator",
         "id": "76561198029004420",
         "visible": true,
-        "wingman": 6,
+        "wingman": 7,
         "compet": 12
     },
     {
@@ -417,14 +417,14 @@
         "id": "lushenfr",
         "visible": true,
         "wingman": 16,
-        "compet": 12
+        "compet": 13
     },
     {
         "name": "Eagle",
         "id": "yatangak",
         "visible": true,
         "wingman": 14,
-        "compet": 12
+        "compet": 13
     },
     {
         "name": "Eagle",
@@ -438,6 +438,6 @@
         "id": "76561198074589412",
         "visible": true,
         "wingman": 0,
-        "compet": 5
+        "compet": 6
     }
 ]
