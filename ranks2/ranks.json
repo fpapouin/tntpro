@@ -3,7 +3,7 @@
         "name": "Tiger",
         "id": "76561197960378169",
         "visible": true,
-        "wingman": 2,
+        "wingman": 4,
         "compet": 3
     },
     {
@@ -18,7 +18,7 @@
         "id": "76561197960306957",
         "visible": true,
         "wingman": 16,
-        "compet": 12
+        "compet": 11
     },
     {
         "name": "le tarteur",
@@ -45,7 +45,7 @@
         "name": "Inuit'TeX",
         "id": "pierrecaline76",
         "visible": true,
-        "wingman": 17,
+        "wingman": 18,
         "compet": 12
     },
     {
@@ -74,7 +74,7 @@
         "id": "76561198993561651",
         "visible": true,
         "wingman": 0,
-        "compet": 6
+        "compet": 5
     },
     {
         "name": "MainRo'",
@@ -94,8 +94,8 @@
         "name": "MnR'",
         "id": "76561198409217510",
         "visible": true,
-        "wingman": 8,
-        "compet": 14
+        "wingman": 9,
+        "compet": 15
     },
     {
         "name": "Cyka",
@@ -116,7 +116,7 @@
         "id": "76561198049684581",
         "visible": true,
         "wingman": 10,
-        "compet": 11
+        "compet": 10
     },
     {
         "name": "Lars Van Sen",
@@ -129,7 +129,7 @@
         "name": "Lars",
         "id": "76561198965888203",
         "visible": true,
-        "wingman": 6,
+        "wingman": 5,
         "compet": 3
     },
     {
@@ -185,8 +185,8 @@
         "name": "Feuillouxx ",
         "id": "76561198991068514",
         "visible": true,
-        "wingman": 12,
-        "compet": 13
+        "wingman": 11,
+        "compet": 12
     },
     {
         "name": "feuilloufloux",
@@ -221,7 +221,7 @@
         "id": "76561198216913655",
         "visible": true,
         "wingman": 15,
-        "compet": 11
+        "compet": 10
     },
     {
         "name": "PetitAbricotDesIles",
@@ -284,7 +284,7 @@
         "id": "76561198008173372",
         "visible": true,
         "wingman": 0,
-        "compet": 13
+        "compet": 12
     },
     {
         "name": "lemerou",
@@ -360,8 +360,8 @@
         "name": "legraloupio",
         "id": "76561199027858579",
         "visible": true,
-        "wingman": 15,
-        "compet": 11
+        "wingman": 16,
+        "compet": 10
     },
     {
         "name": "MnR6",
@@ -395,21 +395,21 @@
         "name": "sodoreskator",
         "id": "76561198029004420",
         "visible": true,
-        "wingman": 7,
-        "compet": 12
+        "wingman": 8,
+        "compet": 13
     },
     {
         "name": "Wasted",
         "id": "76561198024146435",
         "visible": true,
         "wingman": 2,
-        "compet": 12
+        "compet": 13
     },
     {
         "name": "Zorax",
         "id": "76561199041978518",
         "visible": true,
-        "wingman": 10,
+        "wingman": 11,
         "compet": 10
     },
     {
@@ -438,6 +438,6 @@
         "id": "76561198074589412",
         "visible": true,
         "wingman": 0,
-        "compet": 6
+        "compet": 7
     }
 ]

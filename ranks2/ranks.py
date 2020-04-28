@@ -262,6 +262,14 @@ class Ihm():
         c.bind('<Button-3>', player.wingman_click)
 
     def export(self):
+        for player in self.accounts:
+            update_ranks(player)
+        for key in self.root.children:
+            self.root.children[key].grid_forget()
+        self.root.children.clear()
+        self.root.update()
+        self.load()
+        self.root.update()
         import win32gui
         from PIL import ImageGrab, Image
         handle = self.root.winfo_id()
@@ -272,8 +280,6 @@ class Ihm():
         self.next()
         self.root.update()
         ranks2 = ImageGrab.grab(rect)
-        for player in self.accounts:
-            update_ranks(player)
         self.root.destroy()
         new_img = Image.new('RGB', (1920, 1630))
         new_img.paste(ranks1)
