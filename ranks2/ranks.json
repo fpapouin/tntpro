@@ -24,14 +24,14 @@
         "name": "le tarteur",
         "id": "76561197960856067",
         "visible": true,
-        "wingman": 14,
+        "wingman": 15,
         "compet": 12
     },
     {
         "name": "galpipo",
         "id": "76561197996565738",
         "visible": true,
-        "wingman": 14,
+        "wingman": 16,
         "compet": 16
     },
     {
@@ -45,8 +45,8 @@
         "name": "Inuit'TeX",
         "id": "pierrecaline76",
         "visible": true,
-        "wingman": 18,
-        "compet": 12
+        "wingman": 17,
+        "compet": 11
     },
     {
         "name": "AlfTex",
@@ -60,20 +60,20 @@
         "id": "76561198985558928",
         "visible": true,
         "wingman": 14,
-        "compet": 6
+        "compet": 5
     },
     {
         "name": "smurf",
         "id": "76561198996797608",
         "visible": true,
         "wingman": 0,
-        "compet": 6
+        "compet": 8
     },
     {
         "name": "MiNeDiAmOnDs76",
         "id": "76561198993561651",
         "visible": true,
-        "wingman": 0,
+        "wingman": 12,
         "compet": 5
     },
     {
@@ -109,7 +109,7 @@
         "id": "76561199008260606",
         "visible": true,
         "wingman": 0,
-        "compet": 11
+        "compet": 12
     },
     {
         "name": "Los Van Sen",
@@ -220,8 +220,8 @@
         "name": "Zyhwo",
         "id": "76561198216913655",
         "visible": true,
-        "wingman": 15,
-        "compet": 10
+        "wingman": 16,
+        "compet": 11
     },
     {
         "name": "PetitAbricotDesIles",
@@ -305,7 +305,7 @@
         "id": "raphaoul",
         "visible": true,
         "wingman": 12,
-        "compet": 10
+        "compet": 9
     },
     {
         "name": "Hisoka",
@@ -388,7 +388,7 @@
         "name": "Boubourse",
         "id": "76561199032420039",
         "visible": true,
-        "wingman": 13,
+        "wingman": 15,
         "compet": 9
     },
     {
@@ -396,7 +396,7 @@
         "id": "76561198029004420",
         "visible": true,
         "wingman": 8,
-        "compet": 13
+        "compet": 12
     },
     {
         "name": "Wasted",
@@ -424,7 +424,7 @@
         "id": "yatangak",
         "visible": true,
         "wingman": 14,
-        "compet": 13
+        "compet": 14
     },
     {
         "name": "Eagle",
@@ -438,6 +438,13 @@
         "id": "76561198074589412",
         "visible": true,
         "wingman": 0,
+        "compet": 6
+    },
+    {
+        "name": "_LbF_",
+        "id": "leo0976",
+        "visible": true,
+        "wingman": 10,
         "compet": 7
     }
 ]

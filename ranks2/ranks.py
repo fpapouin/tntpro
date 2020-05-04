@@ -294,14 +294,30 @@ def upload(user, password):
         session.storbinary('STOR ranks.png', binary_file)
     session.quit()
 
+def update(token):
+    import discord
+    import uuid
+
+    class MyClient(discord.Client):
+        async def on_ready(self):
+            print('Logged on as {0}!'.format(self.user))
+            channel = self.get_channel(591959950322958337)
+            #message = await channel.send('hello')
+            message = await channel.fetch_message(705417121152237640)
+            ranks_url = 'http://le.dahut.free.fr/ranks.png?' + str(uuid.uuid4())
+            await message.edit(content=ranks_url)
+            await self.close()
+    client = MyClient()
+    client.run(token)
 
 def main():
     # parse_txt_to_json()
     if len(sys.argv) == 2:
         add_account(sys.argv[1])
     Ihm()
-    if len(sys.argv) == 3:
+    if len(sys.argv) == 4:
         upload(sys.argv[1], sys.argv[2])
+        update(sys.argv[3])
 
 
 if __name__ == '__main__':
