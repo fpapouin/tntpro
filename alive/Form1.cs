@@ -16,7 +16,7 @@ namespace alive
     public partial class Form1 : Form
     {
         [DllImport("user32.dll")]
-        public static extern IntPtr PostMessage(IntPtr hWnd, int Msg, uint wParam, uint lParam);
+        static extern bool PostMessage(IntPtr hWnd, UInt32 Msg, int wParam, int lParam);
 
         public Form1()
         {
@@ -31,15 +31,15 @@ namespace alive
             this.notifyIcon1.Text = "alive";
             int sec = 1000;
             int min1 = sec * 60;
-            System.Timers.Timer timer = new System.Timers.Timer(min1 * 25);
+            //System.Timers.Timer timer = new System.Timers.Timer(min1 * 25);
+            System.Timers.Timer timer = new System.Timers.Timer(sec*3);
             timer.Elapsed += OnTimedEvent;
             timer.Start();
         }
         private void OnTimedEvent(Object source, ElapsedEventArgs e)
         {
             (source as System.Timers.Timer).Stop();
-            //Doloop();
-            Console.Beep(37, 2500);
+            Doloop();
             (source as System.Timers.Timer).Start();
         }
 
@@ -50,16 +50,14 @@ namespace alive
 
         private void Doloop()
         {
-            var pl = Process.GetProcessesByName("Shadow");
-            foreach (var p in pl)
-            {
-                ushort WM_SYSKEYDOWN = 260;
-                ushort WM_SYSKEYUP = 261;
-                ushort WM_CHAR = 258;
-                ushort WM_KEYDOWN = 256;
-                ushort WM_KEYUP = 257;
-                PostMessage(p.MainWindowHandle, WM_SYSKEYDOWN, (ushort)System.Windows.Forms.Keys.F1, 0);
-            }
+            const UInt32 WM_KEYDOWN = 0x0100;
+            const int VK_F5 = 0x74;
+
+            List<Process> processes = Process.GetProcessesByName("notepad").ToList();
+            processes.AddRange(Process.GetProcessesByName("Shadow").ToList());
+            foreach (Process proc in processes)
+                PostMessage(proc.MainWindowHandle, WM_KEYDOWN, VK_F5, 0);
         }
+    
     }
 }
