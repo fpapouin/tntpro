@@ -18,7 +18,7 @@
         "id": "76561197960306957",
         "visible": true,
         "wingman": 16,
-        "compet": 11
+        "compet": 12
     },
     {
         "name": "le tarteur",
@@ -46,7 +46,7 @@
         "id": "pierrecaline76",
         "visible": true,
         "wingman": 17,
-        "compet": 11
+        "compet": 12
     },
     {
         "name": "AlfTex",
@@ -157,7 +157,7 @@
         "name": "ElGambinos",
         "id": "76561198042469583",
         "visible": true,
-        "wingman": 14,
+        "wingman": 13,
         "compet": 14
     },
     {
@@ -172,7 +172,7 @@
         "id": "76561198967078903",
         "visible": true,
         "wingman": 0,
-        "compet": 4
+        "compet": 5
     },
     {
         "name": "Feuillou",
@@ -221,7 +221,7 @@
         "id": "76561198216913655",
         "visible": true,
         "wingman": 16,
-        "compet": 10
+        "compet": 11
     },
     {
         "name": "PetitAbricotDesIles",
@@ -410,7 +410,7 @@
         "id": "76561199041978518",
         "visible": true,
         "wingman": 11,
-        "compet": 11
+        "compet": 12
     },
     {
         "name": "Akeen",
@@ -452,7 +452,7 @@
         "id": "AlmostBeYourHero",
         "visible": true,
         "wingman": 0,
-        "compet": 0
+        "compet": 10
     },
     {
         "name": "le_dodo",
