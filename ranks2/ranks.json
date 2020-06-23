@@ -4,42 +4,42 @@
         "id": "76561197960378169",
         "visible": true,
         "wingman": 3,
-        "compet": 3
+        "compet": 2
     },
     {
         "name": "legaloupio",
         "id": "76561197960533173",
         "visible": true,
         "wingman": 17,
-        "compet": 12
+        "compet": 13
     },
     {
         "name": "le_dahut",
         "id": "76561197960306957",
         "visible": true,
         "wingman": 16,
-        "compet": 12
+        "compet": 13
     },
     {
         "name": "le tarteur",
         "id": "76561197960856067",
         "visible": true,
-        "wingman": 15,
-        "compet": 12
+        "wingman": 16,
+        "compet": 13
     },
     {
         "name": "galpipo",
         "id": "76561197996565738",
         "visible": true,
         "wingman": 16,
-        "compet": 16
+        "compet": 15
     },
     {
         "name": "gerbille",
         "id": "76561197960354652",
         "visible": true,
         "wingman": 16,
-        "compet": 12
+        "compet": 13
     },
     {
         "name": "Inuit'TeX",
@@ -52,7 +52,7 @@
         "name": "AlfTex",
         "id": "SPINOZAUR76",
         "visible": true,
-        "wingman": 14,
+        "wingman": 15,
         "compet": 14
     },
     {
@@ -67,14 +67,14 @@
         "id": "76561198996797608",
         "visible": true,
         "wingman": 0,
-        "compet": 8
+        "compet": 9
     },
     {
         "name": "MiNeDiAmOnDs76",
         "id": "76561198993561651",
         "visible": true,
         "wingman": 12,
-        "compet": 5
+        "compet": 6
     },
     {
         "name": "MainRo'",
@@ -109,14 +109,14 @@
         "id": "76561199008260606",
         "visible": true,
         "wingman": 0,
-        "compet": 12
+        "compet": 13
     },
     {
         "name": "Los Van Sen",
         "id": "76561198049684581",
         "visible": true,
-        "wingman": 10,
-        "compet": 11
+        "wingman": 11,
+        "compet": 12
     },
     {
         "name": "Lars Van Sen",
@@ -130,13 +130,13 @@
         "id": "76561198965888203",
         "visible": true,
         "wingman": 4,
-        "compet": 3
+        "compet": 2
     },
     {
         "name": "NolAkame",
         "id": "ThomasHeroOfTime",
         "visible": true,
-        "wingman": 16,
+        "wingman": 17,
         "compet": 14
     },
     {
@@ -157,7 +157,7 @@
         "name": "ElGambinos",
         "id": "76561198042469583",
         "visible": true,
-        "wingman": 13,
+        "wingman": 14,
         "compet": 14
     },
     {
@@ -172,7 +172,7 @@
         "id": "76561198967078903",
         "visible": true,
         "wingman": 0,
-        "compet": 5
+        "compet": 6
     },
     {
         "name": "Feuillou",
@@ -263,7 +263,7 @@
         "id": "mkl35",
         "visible": true,
         "wingman": 2,
-        "compet": 12
+        "compet": 13
     },
     {
         "name": "Mkl35",
@@ -284,7 +284,7 @@
         "id": "76561198008173372",
         "visible": true,
         "wingman": 0,
-        "compet": 12
+        "compet": 14
     },
     {
         "name": "lemerou",
@@ -304,8 +304,8 @@
         "name": "Frost",
         "id": "raphaoul",
         "visible": true,
-        "wingman": 12,
-        "compet": 10
+        "wingman": 14,
+        "compet": 12
     },
     {
         "name": "Hisoka",
@@ -340,7 +340,7 @@
         "id": "76561198993355145",
         "visible": true,
         "wingman": 0,
-        "compet": 8
+        "compet": 7
     },
     {
         "name": "...C.E.M...coco",
@@ -388,29 +388,29 @@
         "name": "Boubourse",
         "id": "76561199032420039",
         "visible": true,
-        "wingman": 15,
-        "compet": 9
+        "wingman": 16,
+        "compet": 10
     },
     {
         "name": "sodoreskator",
         "id": "76561198029004420",
         "visible": true,
-        "wingman": 8,
-        "compet": 13
+        "wingman": 9,
+        "compet": 14
     },
     {
         "name": "Wasted",
         "id": "76561198024146435",
         "visible": true,
-        "wingman": 3,
-        "compet": 13
+        "wingman": 4,
+        "compet": 14
     },
     {
         "name": "Zorax",
         "id": "76561199041978518",
         "visible": true,
-        "wingman": 11,
-        "compet": 12
+        "wingman": 13,
+        "compet": 13
     },
     {
         "name": "Akeen",
@@ -424,14 +424,14 @@
         "id": "yatangak",
         "visible": true,
         "wingman": 14,
-        "compet": 14
+        "compet": 15
     },
     {
         "name": "Eagle",
         "id": "Eagle_77",
         "visible": true,
         "wingman": 17,
-        "compet": 18
+        "compet": 17
     },
     {
         "name": "Markan",
@@ -452,13 +452,13 @@
         "id": "AlmostBeYourHero",
         "visible": true,
         "wingman": 0,
-        "compet": 10
+        "compet": 13
     },
     {
         "name": "le_dodo",
         "id": "76561199056685029",
         "visible": true,
-        "wingman": 0,
-        "compet": 9
+        "wingman": 12,
+        "compet": 12
     }
 ]
