@@ -10,22 +10,22 @@
         "name": "legaloupio",
         "id": "76561197960533173",
         "visible": true,
-        "wingman": 17,
-        "compet": 13
+        "wingman": 16,
+        "compet": 14
     },
     {
         "name": "le_dahut",
         "id": "76561197960306957",
         "visible": true,
         "wingman": 16,
-        "compet": 13
+        "compet": 14
     },
     {
         "name": "le tarteur",
         "id": "76561197960856067",
         "visible": true,
         "wingman": 16,
-        "compet": 13
+        "compet": 14
     },
     {
         "name": "galpipo",
@@ -39,7 +39,7 @@
         "id": "76561197960354652",
         "visible": true,
         "wingman": 16,
-        "compet": 13
+        "compet": 12
     },
     {
         "name": "Inuit'TeX",
@@ -221,7 +221,7 @@
         "id": "76561198216913655",
         "visible": true,
         "wingman": 16,
-        "compet": 11
+        "compet": 12
     },
     {
         "name": "PetitAbricotDesIles",
@@ -360,8 +360,8 @@
         "name": "legraloupio",
         "id": "76561199027858579",
         "visible": true,
-        "wingman": 16,
-        "compet": 10
+        "wingman": 15,
+        "compet": 8
     },
     {
         "name": "MnR6",
@@ -389,7 +389,7 @@
         "id": "76561199032420039",
         "visible": true,
         "wingman": 16,
-        "compet": 10
+        "compet": 11
     },
     {
         "name": "sodoreskator",
@@ -409,7 +409,7 @@
         "name": "Zorax",
         "id": "76561199041978518",
         "visible": true,
-        "wingman": 13,
+        "wingman": 14,
         "compet": 13
     },
     {
@@ -417,7 +417,7 @@
         "id": "lushenfr",
         "visible": true,
         "wingman": 17,
-        "compet": 13
+        "compet": 14
     },
     {
         "name": "Eagle",
@@ -458,7 +458,14 @@
         "name": "le_dodo",
         "id": "76561199056685029",
         "visible": true,
-        "wingman": 12,
-        "compet": 12
+        "wingman": 13,
+        "compet": 13
+    },
+    {
+        "name": "sodoreskator",
+        "id": "76561199055586582",
+        "visible": true,
+        "wingman": 0,
+        "compet": 10
     }
 ]
