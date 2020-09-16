@@ -11,7 +11,7 @@
         "id": "76561197960533173",
         "visible": true,
         "wingman": 16,
-        "compet": 14
+        "compet": 13
     },
     {
         "name": "le_dahut",
@@ -39,7 +39,7 @@
         "id": "76561197960354652",
         "visible": true,
         "wingman": 16,
-        "compet": 12
+        "compet": 11
     },
     {
         "name": "Inuit'TeX",
@@ -74,14 +74,14 @@
         "id": "76561198993561651",
         "visible": true,
         "wingman": 12,
-        "compet": 6
+        "compet": 5
     },
     {
         "name": "MainRo'",
         "id": "76561197960479086",
         "visible": true,
         "wingman": 11,
-        "compet": 14
+        "compet": 12
     },
     {
         "name": "Passe-Partout",
@@ -123,7 +123,7 @@
         "id": "76561198900437043",
         "visible": true,
         "wingman": 15,
-        "compet": 14
+        "compet": 12
     },
     {
         "name": "Lars",
@@ -144,7 +144,7 @@
         "id": "76561198115345960",
         "visible": true,
         "wingman": 0,
-        "compet": 14
+        "compet": 13
     },
     {
         "name": "Obi Wan Can Blow Me",
@@ -200,7 +200,7 @@
         "id": "wyhzo",
         "visible": true,
         "wingman": 8,
-        "compet": 17
+        "compet": 16
     },
     {
         "name": "Wyhzo2",
@@ -389,7 +389,7 @@
         "id": "76561198086200818",
         "visible": true,
         "wingman": 12,
-        "compet": 11
+        "compet": 10
     },
     {
         "name": "Boubourse",
@@ -403,7 +403,7 @@
         "id": "76561198029004420",
         "visible": true,
         "wingman": 10,
-        "compet": 13
+        "compet": 12
     },
     {
         "name": "Wasted",
@@ -445,7 +445,7 @@
         "id": "76561198074589412",
         "visible": true,
         "wingman": 0,
-        "compet": 7
+        "compet": 6
     },
     {
         "name": "_LbF_",
@@ -466,11 +466,25 @@
         "id": "76561199056685029",
         "visible": true,
         "wingman": 16,
-        "compet": 13
+        "compet": 14
     },
     {
         "name": "sodoreskator",
         "id": "76561199055586582",
+        "visible": true,
+        "wingman": 0,
+        "compet": 12
+    },
+    {
+        "name": "MeeKayJi",
+        "id": "MeeKayJi",
+        "visible": true,
+        "wingman": 0,
+        "compet": 13
+    },
+    {
+        "name": "[FFF] Wo0dzz 1337 $7'/13",
+        "id": "76561197966500568",
         "visible": true,
         "wingman": 0,
         "compet": 11

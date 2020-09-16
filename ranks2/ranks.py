@@ -281,7 +281,7 @@ class Ihm():
         self.root.update()
         ranks2 = ImageGrab.grab(rect)
         self.root.destroy()
-        new_img = Image.new('RGB', (1920, 1770))
+        new_img = Image.new('RGB', (1920, 1900))
         new_img.paste(ranks1)
         new_img.paste(ranks2, (0, 950))
         new_img.save('ranks.png', 'png')
