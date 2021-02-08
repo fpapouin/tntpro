@@ -11,14 +11,14 @@
         "id": "76561197960533173",
         "visible": true,
         "wingman": 16,
-        "compet": 13
+        "compet": 14
     },
     {
         "name": "le_dahut",
         "id": "76561197960306957",
         "visible": true,
         "wingman": 16,
-        "compet": 14
+        "compet": 12
     },
     {
         "name": "le tarteur",
@@ -39,14 +39,14 @@
         "id": "76561197960354652",
         "visible": true,
         "wingman": 16,
-        "compet": 11
+        "compet": 14
     },
     {
         "name": "Inuit'TeX",
         "id": "pierrecaline76",
         "visible": true,
         "wingman": 17,
-        "compet": 12
+        "compet": 10
     },
     {
         "name": "AlfTex",
@@ -60,35 +60,35 @@
         "id": "76561198985558928",
         "visible": true,
         "wingman": 14,
-        "compet": 7
+        "compet": 5
     },
     {
         "name": "smurf",
         "id": "76561198996797608",
         "visible": true,
         "wingman": 0,
-        "compet": 10
+        "compet": 6
     },
     {
         "name": "MiNeDiAmOnDs76",
         "id": "76561198993561651",
         "visible": true,
         "wingman": 12,
-        "compet": 5
+        "compet": 4
     },
     {
         "name": "MainRo'",
         "id": "76561197960479086",
         "visible": true,
         "wingman": 11,
-        "compet": 12
+        "compet": 14
     },
     {
         "name": "Passe-Partout",
         "id": "76561198084548328",
         "visible": true,
-        "wingman": 14,
-        "compet": 13
+        "wingman": 13,
+        "compet": 12
     },
     {
         "name": "MnR'",
@@ -102,21 +102,21 @@
         "id": "76561198986738740",
         "visible": true,
         "wingman": 0,
-        "compet": 12
+        "compet": 10
     },
     {
         "name": "MnRRRRRRRRRRRRRR",
         "id": "76561199008260606",
         "visible": true,
         "wingman": 0,
-        "compet": 13
+        "compet": 12
     },
     {
         "name": "Los Van Sen",
         "id": "76561198049684581",
         "visible": true,
         "wingman": 11,
-        "compet": 11
+        "compet": 10
     },
     {
         "name": "Lars Van Sen",
@@ -137,13 +137,13 @@
         "id": "ThomasHeroOfTime",
         "visible": true,
         "wingman": 17,
-        "compet": 14
+        "compet": 15
     },
     {
         "name": "UniBran",
         "id": "76561198115345960",
         "visible": true,
-        "wingman": 0,
+        "wingman": 12,
         "compet": 13
     },
     {
@@ -158,7 +158,7 @@
         "id": "76561198042469583",
         "visible": true,
         "wingman": 14,
-        "compet": 14
+        "compet": 13
     },
     {
         "name": "GAMBIE",
@@ -172,7 +172,7 @@
         "id": "76561198967078903",
         "visible": true,
         "wingman": 0,
-        "compet": 6
+        "compet": 5
     },
     {
         "name": "Feuillou",
@@ -200,28 +200,28 @@
         "id": "wyhzo",
         "visible": true,
         "wingman": 8,
-        "compet": 16
+        "compet": 17
     },
     {
         "name": "Wyhzo2",
         "id": "76561197975968881",
         "visible": true,
-        "wingman": 11,
-        "compet": 14
+        "wingman": 10,
+        "compet": 15
     },
     {
         "name": "Wyz.",
         "id": "76561198998035356",
         "visible": true,
         "wingman": 0,
-        "compet": 11
+        "compet": 10
     },
     {
         "name": "Zyhwo",
         "id": "76561198216913655",
         "visible": true,
         "wingman": 16,
-        "compet": 12
+        "compet": 10
     },
     {
         "name": "PetitAbricotDesIles",
@@ -270,7 +270,7 @@
         "id": "76561198987091135",
         "visible": true,
         "wingman": 0,
-        "compet": 7
+        "compet": 5
     },
     {
         "name": "mxm",
@@ -304,8 +304,8 @@
         "name": "Frost",
         "id": "raphaoul",
         "visible": true,
-        "wingman": 14,
-        "compet": 12
+        "wingman": 16,
+        "compet": 13
     },
     {
         "name": "Hisoka",
@@ -333,7 +333,7 @@
         "id": "76561198441326705",
         "visible": true,
         "wingman": 0,
-        "compet": 0
+        "compet": 9
     },
     {
         "name": "TheKiF",
@@ -361,7 +361,7 @@
         "id": "76561198109619241",
         "visible": true,
         "wingman": 12,
-        "compet": 6
+        "compet": 5
     },
     {
         "name": "legraloupio",
@@ -375,7 +375,7 @@
         "id": "76561199027927231",
         "visible": true,
         "wingman": 0,
-        "compet": 14
+        "compet": 13
     },
     {
         "name": "mxm''",
@@ -410,7 +410,7 @@
         "id": "76561198024146435",
         "visible": true,
         "wingman": 3,
-        "compet": 13
+        "compet": 12
     },
     {
         "name": "Zorax",
@@ -424,7 +424,7 @@
         "id": "lushenfr",
         "visible": true,
         "wingman": 17,
-        "compet": 15
+        "compet": 14
     },
     {
         "name": "Eagle",
@@ -459,14 +459,14 @@
         "id": "AlmostBeYourHero",
         "visible": true,
         "wingman": 0,
-        "compet": 13
+        "compet": 12
     },
     {
         "name": "le_dodo",
         "id": "76561199056685029",
         "visible": true,
         "wingman": 16,
-        "compet": 14
+        "compet": 9
     },
     {
         "name": "sodoreskator",
@@ -479,7 +479,7 @@
         "name": "MeeKayJi",
         "id": "MeeKayJi",
         "visible": true,
-        "wingman": 0,
+        "wingman": 2,
         "compet": 13
     },
     {
@@ -488,5 +488,26 @@
         "visible": true,
         "wingman": 0,
         "compet": 11
+    },
+    {
+        "name": "FBI OPEN UP",
+        "id": "76561198139034034",
+        "visible": true,
+        "wingman": 16,
+        "compet": 12
+    },
+    {
+        "name": "CannAkeen Skywalker",
+        "id": "lushenfrv2",
+        "visible": true,
+        "wingman": 16,
+        "compet": 13
+    },
+    {
+        "name": "E85 Super Ethanol",
+        "id": "76561198169033723",
+        "visible": true,
+        "wingman": 1,
+        "compet": 9
     }
 ]
