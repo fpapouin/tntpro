@@ -217,9 +217,9 @@ class Ihm():
         import tkinter.font as font
         myFont = font.Font(size=35)
         foreColor = 'BlueViolet'
-        if pos <= 50:
+        if pos <= 35:
             foreColor = 'OrangeRed'
-        if pos <= 30:
+        if pos <= 25:
             foreColor = 'Green'
         if pos <= 15:
             foreColor = 'RoyalBlue'
