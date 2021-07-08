@@ -11,14 +11,14 @@
         "id": "76561197960533173",
         "visible": true,
         "wingman": 16,
-        "compet": 12
+        "compet": 11
     },
     {
         "name": "le_dahut",
         "id": "76561197960306957",
         "visible": true,
         "wingman": 15,
-        "compet": 10
+        "compet": 11
     },
     {
         "name": "le tarteur",
@@ -88,7 +88,7 @@
         "id": "76561198084548328",
         "visible": true,
         "wingman": 13,
-        "compet": 11
+        "compet": 12
     },
     {
         "name": "MnR'",
@@ -123,7 +123,7 @@
         "id": "76561198900437043",
         "visible": true,
         "wingman": 15,
-        "compet": 10
+        "compet": 11
     },
     {
         "name": "Lars",
@@ -151,7 +151,7 @@
         "id": "76561198013889532",
         "visible": true,
         "wingman": 0,
-        "compet": 10
+        "compet": 11
     },
     {
         "name": "ElGambinos",
@@ -247,9 +247,9 @@
     {
         "name": "Shteuf",
         "id": "shteuf",
-        "visible": false,
+        "visible": true,
         "wingman": 16,
-        "compet": 11
+        "compet": 9
     },
     {
         "name": "Fantastic Toad",
