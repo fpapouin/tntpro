@@ -11,7 +11,7 @@
         "id": "76561197960533173",
         "visible": true,
         "wingman": 16,
-        "compet": 7
+        "compet": 8
     },
     {
         "name": "le_dahut",
@@ -32,7 +32,7 @@
         "id": "76561197996565738",
         "visible": true,
         "wingman": 16,
-        "compet": 13
+        "compet": 14
     },
     {
         "name": "gerbille",
@@ -67,7 +67,7 @@
         "id": "76561198996797608",
         "visible": true,
         "wingman": 0,
-        "compet": 7
+        "compet": 6
     },
     {
         "name": "MiNeDiAmOnDs76",
@@ -81,7 +81,7 @@
         "id": "76561197960479086",
         "visible": true,
         "wingman": 10,
-        "compet": 12
+        "compet": 11
     },
     {
         "name": "Passe-Partout",
@@ -144,14 +144,14 @@
         "id": "76561198115345960",
         "visible": true,
         "wingman": 12,
-        "compet": 11
+        "compet": 10
     },
     {
         "name": "Obi Wan Can Blow Me",
         "id": "76561198013889532",
         "visible": true,
         "wingman": 0,
-        "compet": 12
+        "compet": 11
     },
     {
         "name": "ElGambinos",
@@ -200,14 +200,14 @@
         "id": "wyhzo",
         "visible": true,
         "wingman": 4,
-        "compet": 14
+        "compet": 13
     },
     {
         "name": "Wyhzo2",
         "id": "76561197975968881",
         "visible": true,
         "wingman": 9,
-        "compet": 8
+        "compet": 7
     },
     {
         "name": "Wyz.",
@@ -333,7 +333,7 @@
         "id": "76561198441326705",
         "visible": true,
         "wingman": 0,
-        "compet": 9
+        "compet": 8
     },
     {
         "name": "TheKiF",
@@ -368,7 +368,7 @@
         "id": "76561199027858579",
         "visible": true,
         "wingman": 16,
-        "compet": 9
+        "compet": 7
     },
     {
         "name": "MnR6",
@@ -403,14 +403,14 @@
         "id": "76561198029004420",
         "visible": true,
         "wingman": 10,
-        "compet": 12
+        "compet": 11
     },
     {
         "name": "Wasted",
         "id": "76561198024146435",
         "visible": true,
-        "wingman": 2,
-        "compet": 12
+        "wingman": 3,
+        "compet": 11
     },
     {
         "name": "Zorax",
@@ -473,7 +473,7 @@
         "id": "76561199055586582",
         "visible": true,
         "wingman": 0,
-        "compet": 11
+        "compet": 12
     },
     {
         "name": "MeeKayJi",
