@@ -4,21 +4,21 @@
         "id": "76561197960378169",
         "visible": true,
         "wingman": 1,
-        "compet": 4
+        "compet": 6
     },
     {
         "name": "legaloupio",
         "id": "76561197960533173",
-        "visible": true,
+        "visible": false,
         "wingman": 16,
-        "compet": 8
+        "compet": 10
     },
     {
         "name": "le_dahut",
         "id": "76561197960306957",
         "visible": true,
         "wingman": 15,
-        "compet": 7
+        "compet": 10
     },
     {
         "name": "le tarteur",
@@ -46,7 +46,7 @@
         "id": "pierrecaline76",
         "visible": true,
         "wingman": 17,
-        "compet": 13
+        "compet": 9
     },
     {
         "name": "AlfTex",
@@ -74,14 +74,14 @@
         "id": "76561198993561651",
         "visible": true,
         "wingman": 10,
-        "compet": 2
+        "compet": 3
     },
     {
         "name": "MainRo'",
         "id": "76561197960479086",
         "visible": true,
         "wingman": 10,
-        "compet": 11
+        "compet": 10
     },
     {
         "name": "Passe-Partout",
@@ -115,8 +115,8 @@
         "name": "Los Van Sen",
         "id": "76561198049684581",
         "visible": true,
-        "wingman": 3,
-        "compet": 9
+        "wingman": 1,
+        "compet": 10
     },
     {
         "name": "Lars Van Sen",
@@ -137,21 +137,21 @@
         "id": "ThomasHeroOfTime",
         "visible": true,
         "wingman": 16,
-        "compet": 15
+        "compet": 14
     },
     {
         "name": "UniBran",
         "id": "76561198115345960",
         "visible": true,
         "wingman": 12,
-        "compet": 10
+        "compet": 11
     },
     {
         "name": "Obi Wan Can Blow Me",
         "id": "76561198013889532",
         "visible": true,
         "wingman": 0,
-        "compet": 11
+        "compet": 13
     },
     {
         "name": "ElGambinos",
@@ -200,7 +200,7 @@
         "id": "wyhzo",
         "visible": true,
         "wingman": 4,
-        "compet": 13
+        "compet": 10
     },
     {
         "name": "Wyhzo2",
@@ -249,7 +249,7 @@
         "id": "shteuf",
         "visible": true,
         "wingman": 16,
-        "compet": 9
+        "compet": 8
     },
     {
         "name": "Fantastic Toad",
@@ -304,8 +304,8 @@
         "name": "Frost",
         "id": "raphaoul",
         "visible": true,
-        "wingman": 17,
-        "compet": 11
+        "wingman": 18,
+        "compet": 16
     },
     {
         "name": "Hisoka",
@@ -333,7 +333,7 @@
         "id": "76561198441326705",
         "visible": true,
         "wingman": 0,
-        "compet": 8
+        "compet": 7
     },
     {
         "name": "TheKiF",
@@ -359,7 +359,7 @@
     {
         "name": "bogoss2012",
         "id": "76561198109619241",
-        "visible": false,
+        "visible": true,
         "wingman": 12,
         "compet": 5
     },
@@ -396,20 +396,20 @@
         "id": "76561199032420039",
         "visible": true,
         "wingman": 16,
-        "compet": 7
+        "compet": 8
     },
     {
         "name": "sodoreskator",
         "id": "76561198029004420",
         "visible": true,
-        "wingman": 10,
+        "wingman": 8,
         "compet": 11
     },
     {
         "name": "Wasted",
         "id": "76561198024146435",
         "visible": true,
-        "wingman": 3,
+        "wingman": 2,
         "compet": 11
     },
     {
@@ -459,28 +459,28 @@
         "id": "AlmostBeYourHero",
         "visible": true,
         "wingman": 0,
-        "compet": 8
+        "compet": 7
     },
     {
         "name": "le_dodo",
         "id": "76561199056685029",
         "visible": true,
         "wingman": 16,
-        "compet": 7
+        "compet": 6
     },
     {
         "name": "sodoreskator",
         "id": "76561199055586582",
         "visible": true,
         "wingman": 0,
-        "compet": 12
+        "compet": 11
     },
     {
         "name": "MeeKayJi",
         "id": "MeeKayJi",
         "visible": true,
         "wingman": 2,
-        "compet": 13
+        "compet": 11
     },
     {
         "name": "[FFF] Wo0dzz 1337 $7'/13",
@@ -508,14 +508,14 @@
         "id": "76561198169033723",
         "visible": true,
         "wingman": 1,
-        "compet": 9
+        "compet": 8
     },
     {
         "name": "Uriaa",
         "id": "76561198135834120",
         "visible": true,
         "wingman": 5,
-        "compet": 10
+        "compet": 8
     },
     {
         "name": "Master Sheep",
