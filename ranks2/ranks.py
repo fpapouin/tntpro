@@ -60,7 +60,7 @@ class Pohhop():
     def download_avatar(self):
         if not os.path.exists(self.get_avatar()):
             for line in requests.get(self.get_url()).text.splitlines():
-                if 'public/images/avatars' in line:
+                if 'avatars.akamai.steamstatic.com' in line or 'https://avatars.cloudflare.steamstatic.com' in line:
                     avatar = requests.get(line[line.find('https'):line.find('.jpg') + 4])
                     open(self.get_avatar(), 'wb').write(avatar.content)
                     break
@@ -184,6 +184,7 @@ class Ihm():
         position = 0
         delta = 0
         last_account = self.accounts[-1]
+        player: Pohhop
         for player in self.accounts:
             player.download_avatar()
             if not player.visible:
@@ -236,7 +237,7 @@ class Ihm():
         else:
             self.previous()
 
-    def add_avatar(self, root, player):
+    def add_avatar(self, root, player:Pohhop):
         from PIL import ImageTk, Image
         pil_image = Image.open(player.get_avatar()).resize((120, 120), Image.ANTIALIAS)
         player.__avatar__ = ImageTk.PhotoImage(pil_image)
@@ -294,6 +295,7 @@ def upload(user, password):
         session.storbinary('STOR ranks.png', binary_file)
     session.quit()
 
+
 def update(token):
     import discord
     import uuid
@@ -302,13 +304,14 @@ def update(token):
         async def on_ready(self):
             print('Logged on as {0}!'.format(self.user))
             channel = self.get_channel(591959950322958337)
-            #message = await channel.send('hello')
+            # message = await channel.send('hello')
             message = await channel.fetch_message(705417121152237640)
             ranks_url = 'http://le.dahut.free.fr/ranks.png?' + str(uuid.uuid4())
             await message.edit(content=ranks_url)
             await self.close()
-    client = MyClient()
+    client = MyClient(intents=discord.Intents.default())
     client.run(token)
+
 
 def main():
     # parse_txt_to_json()
