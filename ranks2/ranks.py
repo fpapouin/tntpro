@@ -206,11 +206,11 @@ class Ihm():
             self.add_avatar(frame, player)
             self.add_rank(frame, player)
             frame.grid(column=x, row=y, padx=20, pady=5)
-            if y >= 7*2:
-                pass
-                frame.grid_remove()
+            # if y >= 7*2:
+            #     pass
+            #     frame.grid_remove()
             x += 1
-            if x == 5:
+            if x == 3:
                 x = 0
                 y += 2
 
@@ -218,13 +218,13 @@ class Ihm():
         import tkinter.font as font
         myFont = font.Font(size=35)
         foreColor = 'BlueViolet'
-        if pos <= 35:
+        if pos <= 21:
             foreColor = 'OrangeRed'
-        if pos <= 25:
-            foreColor = 'Green'
         if pos <= 15:
+            foreColor = 'Green'
+        if pos <= 9:
             foreColor = 'RoyalBlue'
-        if pos <= 5:
+        if pos <= 3:
             foreColor = 'Yellow'
         b = Button(root, text=str(pos), relief=FLAT, font=myFont, background='Black', foreground=foreColor, width=2)
         b.grid(column=0, rowspan=2, row=0)
@@ -282,9 +282,9 @@ class Ihm():
         self.root.update()
         ranks2 = ImageGrab.grab(rect)
         self.root.destroy()
-        new_img = Image.new('RGB', (1920, 1100))
+        new_img = Image.new('RGB', (1150, 1250))
         new_img.paste(ranks1)
-        new_img.paste(ranks2, (0, 950))
+        # new_img.paste(ranks2, (0, 950))
         new_img.save('ranks.png', 'png')
 
 

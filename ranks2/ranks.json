@@ -23,21 +23,21 @@
     {
         "name": "le tarteur",
         "id": "76561197960856067",
-        "visible": true,
+        "visible": false,
         "wingman": 0,
         "compet": 0
     },
     {
         "name": "galpipo",
         "id": "76561197996565738",
-        "visible": true,
+        "visible": false,
         "wingman": 0,
         "compet": 0
     },
     {
         "name": "gerbille",
         "id": "76561197960354652",
-        "visible": true,
+        "visible": false,
         "wingman": 0,
         "compet": 0
     },
@@ -86,14 +86,14 @@
     {
         "name": "Passe-Partout",
         "id": "76561198084548328",
-        "visible": true,
+        "visible": false,
         "wingman": 0,
         "compet": 0
     },
     {
         "name": "MnR'",
         "id": "76561198409217510",
-        "visible": true,
+        "visible": false,
         "wingman": 0,
         "compet": 0
     },
@@ -156,21 +156,21 @@
     {
         "name": "ElGambinos",
         "id": "76561198042469583",
-        "visible": true,
+        "visible": false,
         "wingman": 5,
         "compet": 0
     },
     {
         "name": "GAMBIE",
         "id": "76561198897576691",
-        "visible": true,
+        "visible": false,
         "wingman": 0,
         "compet": 0
     },
     {
         "name": "LaBambi",
         "id": "76561198967078903",
-        "visible": true,
+        "visible": false,
         "wingman": 0,
         "compet": 0
     },
@@ -262,13 +262,13 @@
         "name": "Micka'z",
         "id": "mkl35",
         "visible": true,
-        "wingman": 0,
+        "wingman": 4,
         "compet": 9
     },
     {
         "name": "Mkl35",
         "id": "76561198987091135",
-        "visible": true,
+        "visible": false,
         "wingman": 0,
         "compet": 0
     },
@@ -282,7 +282,7 @@
     {
         "name": "CasseGrain",
         "id": "tarteur",
-        "visible": true,
+        "visible": false,
         "wingman": 7,
         "compet": 0
     },
@@ -368,7 +368,7 @@
         "id": "76561199032420039",
         "visible": true,
         "wingman": 0,
-        "compet": 11
+        "compet": 12
     },
     {
         "name": "sodoreskator",
@@ -394,7 +394,7 @@
     {
         "name": "Markan",
         "id": "76561198074589412",
-        "visible": true,
+        "visible": false,
         "wingman": 3,
         "compet": 0
     },
@@ -417,7 +417,7 @@
         "id": "76561199056685029",
         "visible": true,
         "wingman": 0,
-        "compet": 11
+        "compet": 12
     },
     {
         "name": "sodoreskator",
@@ -429,14 +429,14 @@
     {
         "name": "MeeKayJi",
         "id": "MeeKayJi",
-        "visible": true,
+        "visible": false,
         "wingman": 2,
         "compet": 0
     },
     {
         "name": "[FFF] Wo0dzz 1337 $7'/13",
         "id": "76561197966500568",
-        "visible": true,
+        "visible": false,
         "wingman": 1,
         "compet": 0
     },
@@ -444,7 +444,7 @@
         "name": "Master Sheep",
         "id": "76561199101775662",
         "visible": true,
-        "wingman": 6,
-        "compet": 13
+        "wingman": 5,
+        "compet": 12
     }
 ]
